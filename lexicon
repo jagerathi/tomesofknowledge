@@ -2,20 +2,24 @@
 
 ACID (Atomic, Consistant, Isolated, Durable) : a set of properties that guarentee database transactions are processed reliably. Is especially concerned with how a database recovers from a failure.
 
-Agile : 
+Agile : Agile project management is an iterative development methodology that values human communication and feedback, adapting to change, and producing working results. ... Agile is iterative, meaning that it is done in pieces (sprints), with each sprint building and improving off the lessons from the previous sprint.
 
-Kanban : 
+Kanban : Kanban is a method for managing the creation of products with an emphasis on continual delivery while not overburdening the development team. Like Scrum, Kanban is a process designed to help teams work together more effectively.
 
-Microservices : 
+Microservices : Microservices - also known as the microservice architecture - is an architectural style that structures an application as a collection of services that are highly maintainable and testable, loosely coupled, independently deployable, and organized around business capabilities. (microservices.io)
 
-Refactoring : 
+NoSQL : NoSQL databases are purpose built for specific data models and have flexible schemas for building modern applications. NoSQL databases are widely recognized for their ease of development, functionality, and performance at scale.
 
-SCRUM : 
+Refactoring : Refactoring consists of improving the internal structure of an existing program's source code, while preserving its external behavior. The noun “refactoring” refers to one particular behavior-preserving transformation, such as “Extract Method” or “Introduce Parameter.”
 
-SHA (Secure Hash Algorithm) : 
+SCRUM : Scrum is a framework that helps teams work together. ... Often thought of as an agile project management framework, Scrum describes a set of meetings, tools, and roles that work in concert to help teams structure and manage their work.
 
-SDLC (Software Development Life Cycle) : 
+SDLC (Software Development Life Cycle) : SDLC is a process followed for a software project, within a software organization. It consists of a detailed plan describing how to develop, maintain, replace and alter or enhance specific software. The life cycle defines a methodology for improving the quality of software and the overall development process. Stages are 1) Planning and Requirements Analysis, 2) Defining Requirements, 3) Designing the Product Architecture, 4) Building and Developing the Product, 5) Testing the Product, 6) Deployment and Maintenance
 
-TDD (Test Driven Design) : 
+SHA (Secure Hash Algorithm) : Secure Hash Algorithms, also known as SHA, are a family of cryptographic functions designed to keep data secured. It works by transforming the data using a hash function: an algorithm that consists of bitwise operations, modular additions, and compression functions.
 
-Unit Testing :
+SQL (Structured Query Language) : SQL stands for Structured Query Language. A query language is a kind of programming language that's designed to facilitate retrieving specific information from databases, and that's exactly what SQL does. To put it simply, SQL is the language of databases.
+
+TDD (Test Driven Design) : TDD instructs developers to write new code only if an automated test has failed. This avoids duplication of code. The full form of TDD is Test-driven development. The simple concept of TDD is to write and correct the failed tests before writing new code (before development).
+
+Unit Testing :A unit test is a way of testing a unit - the smallest piece of code that can be logically isolated in a system. In most programming languages, that is a function, a subroutine, a method or property. The isolated part of the definition is important.
