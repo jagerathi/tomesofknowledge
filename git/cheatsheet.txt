@@ -1,0 +1,21 @@
+=== GIT CLI Cheatsheet ===
+
+.gitignore : create this file to ignore things in your project folder. can be specific file in path (path\to\file.ext), file in any path (file.ext), by file type (*.ext) or for a folder (path\to\folder\*)
+
+add : add something to your local repository. Use "-A" to add all files and folders. 
+
+checkout
+
+clone : 
+
+commit :  -m "comment"
+
+fetch
+
+init : navigate to the project folder and use init to start a new local repository 
+
+push
+
+pull
+
+status : get the status of your local repository 
