@@ -2,11 +2,11 @@
 
 .gitignore : create this file to ignore things in your project folder. can be specific file in path (path\to\file.ext), file in any path (file.ext), by file type (*.ext) or for a folder (path\to\folder\*)
 
-add : add something to your local repository. Use "-A" to add all files and folders. 
+add : add something to the staging area of your local repository. Use "-A" to add all files and folders, or space-delimited list of file names, or folder/* for everything in a folder.
 
 checkout
 
-clone : 
+clone : makes a local copy of a repository 
 
 commit :  -m "comment"
 
@@ -14,8 +14,24 @@ fetch
 
 init : navigate to the project folder and use init to start a new local repository 
 
+log : view the git log for your repository. SPACE to next page and "q" to quit.
+
 push
 
 pull
 
+repository : 1) local resides on your computer, 2) remote implies remote server - master copy for team
+
 status : get the status of your local repository 
+
+
+
+
+
+
+
+
+
+
+References:
+https://www.git-tower.com/learn/git/ebook/en/command-line/basics/working-on-your-project/#start
