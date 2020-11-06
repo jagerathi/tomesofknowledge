@@ -4,19 +4,23 @@
 
 add : add something to the staging area of your local repository. Use "-A" to add all files and folders, or space-delimited list of file names, or folder/* for everything in a folder.
 
-checkout
+branch : 
+
+checkout : switches active branch on local repository 
 
 clone : makes a local copy of a repository 
 
 commit :  -m "comment"
 
-fetch
+fetch : update local repository from remote repository 
 
 init : navigate to the project folder and use init to start a new local repository 
 
 log : view the git log for your repository. SPACE to next page and "q" to quit.
 
-push
+merge : merge branch x into active branch 
+
+push : updates the remote repository from the local repository
 
 pull
 
@@ -24,6 +28,9 @@ repository : 1) local resides on your computer, 2) remote implies remote server 
 
 status : get the status of your local repository 
 
+stash : Think of the Stash as a clipboard on steroids: it takes all the changes in your working copy and saves them for you on a new clipboard. You're left with a clean working copy, i.e. you have no more local changes.
+
+stash list : get a list of stashes 
 
 
 
