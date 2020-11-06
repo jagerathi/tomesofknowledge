@@ -1,9 +1,21 @@
-LEXICON
+=== LEXICON ===
 
 ACID (Atomic, Consistant, Isolated, Durable) : a set of properties that guarentee database transactions are processed reliably. Is especially concerned with how a database recovers from a failure.
 
+Agile : 
+
+Kanban : 
+
+Microservices : 
+
+Refactoring : 
+
+SCRUM : 
+
+SHA (Secure Hash Algorithm) : 
+
 SDLC (Software Development Life Cycle) : 
 
-Agile : 
-SCRUM : 
-Kanban : 
+TDD (Test Driven Design) : 
+
+Unit Testing :
