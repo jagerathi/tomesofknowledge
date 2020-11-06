@@ -4,15 +4,17 @@
 
 add : add something to the staging area of your local repository. Use "-A" to add all files and folders, or space-delimited list of file names, or folder/* for everything in a folder.
 
-branch : 
+branch : create a local branch (use "-d" to delete a branch)
 
 checkout : switches active branch on local repository 
 
 clone : makes a local copy of a repository 
 
-commit :  -m "comment"
+commit :  -m "comment". Use "--amend -m "comment" to correct the commit message. 
 
-fetch : update local repository from remote repository 
+diff: <branch>..<branch> or <hash>..<hash> to compare branches or revisions.
+
+fetch : update local repository from remote repository. Use the "--prune" option to make sure only active branches are displayed in a remote repository.
 
 init : navigate to the project folder and use init to start a new local repository 
 
@@ -20,11 +22,17 @@ log : view the git log for your repository. SPACE to next page and "q" to quit.
 
 merge : merge branch x into active branch 
 
-push : updates the remote repository from the local repository
+push : updates the remote repository from the local repository. Use push "--delete" a remote branch. 
 
 pull
 
 repository : 1) local resides on your computer, 2) remote implies remote server - master copy for team
+
+reset : "--hard HEAD" will revert all local changes to last commit. Use "--hard HASH" to rollback to a specific revision.
+
+revert : moves the active file to the specified hash 
+
+rm : remove a file "rm <filename>"
 
 status : get the status of your local repository 
 
