@@ -22,6 +22,8 @@ log : view the git log for your repository. SPACE to next page and "q" to quit.
 
 merge : merge branch x into active branch 
 
+mv : move or rename something 
+
 push : updates the remote repository from the local repository. Use push "--delete" a remote branch. 
 
 pull
