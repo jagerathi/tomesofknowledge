@@ -1,6 +1,6 @@
 === GIT work flow ===
 
-Starting a new project
+*** Starting a new project *** 
 
 1. Navigate to the root folder 
 2. run "git init"
@@ -8,63 +8,62 @@ Starting a new project
 4. run "git add -A" to add all the project files to local repository 
 5. run "git commit -m "initial commit"" to commit the files to the local repository 
 
-
-
-Working on a remote project 
+*** Working on a remote project *** 
 
 1. Get the project url 
 2. Navigate to the projects root folder 
 3. run "git clone <project url>"
 
-
-Creating a branch 
+*** Creating a branch *** 
 
 1. run "git branch <branch name>" to create a new local branch 
 2. run "git branch -v" to see a list of branches 
 
-Checking out a branch
+*** Checking out a branch *** 
 
 1. run "git checkout <branchname>"
 
-Merging branches 
+*** Merging branches *** 
 
 1. run "git checkout <branchname>" to set the merge target 
 2. run "git merge <branchname>" to merge from source branch to target 
 
-Committing changes 
+*** Committing changes *** 
 
 1. run "git status" to see a list of changes 
 2. run "git add <filename> <filename2> <filename3>" to stage files to commit 
 3. run "git commit -m "<commit comment here...be detailed>"". For longer commit comments - leave out the -m and git will open a text editor for you to use instead.
 4. run "git log" to view the commit history 
 
-Stashing changes 
+*** Stashing changes *** 
 
 1. run "git stash" to save your changes to a clipboard to recall later 
 2. run "git stash list" to see a list of stashes 
 
-Restoring a stash 
+*** Restoring a stash *** 
 
 1. For the newest stash - run "git stash pop"
 2. For a specific stash - run "git stash apply <stashname>". You must also delete it if you are done, run "git stash drop <stashname>".
 3. Use "git stash list" to get the stash names.
 
-When to Stash
+*** When to Stash *** 
 Stashing helps you get a clean working copy. While this can be helpful in many situations, it's strongly recommended...
 
 1) before checking out a different branch.
 2) before pulling remote changes.
 3) before merging or rebasing a branch.
 
-What Makes a Good Commit?
+*** What Makes a Good Commit? *** 
+
 The better and more carefully you craft your commits, the more useful will version control be for you. Here are some guidelines about what makes a good commit:
 
 1. Related Changes
-As stated before, a commit should only contain changes from a single topic. Don't mix up contents from different topics in the same commit. This will make it harder to understand what happened.
+	As stated before, a commit should only contain changes from a single topic. Don't mix up contents from different topics in the same commit. This will make it harder to understand what happened.
 2. Completed Work
-Never commit something that is half-done. If you need to save your current work temporarily in something like a clipboard, you can use Git's "Stash" feature (which will be discussed later in the book). But don't eternalize it in a commit.
+	Never commit something that is half-done. If you need to save your current work temporarily in something like a clipboard, you can use Git's "Stash" feature (which will be discussed later in the book). But don't eternalize it in a commit.
 3. Tested Work
-Related to the point above, you shouldn't commit code that you think is working. Test it well - and before you commit it to the repository.
+	Related to the point above, you shouldn't commit code that you think is working. Test it well - and before you commit it to the repository.
 4. Short & Descriptive Messages
-A good commit also needs a good message. See the paragraph above on how to "Write Good Commit Messages" for more about this.
+	A good commit also needs a good message. See the paragraph above on how to "Write Good Commit Messages" for more about this.
+
 Finally, you should make it a habit to commit often. This will automatically help you to keep your commits small and only include related changes.

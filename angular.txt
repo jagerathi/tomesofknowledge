@@ -1,0 +1,20 @@
+=== ANGULAR ===
+
+ng new <project name>
+
+ng server --open (start angular server and open in browser)
+
+ng generate component <name>
+
+ng generate service <name>
+
+
+
+
+
+*** Angular Base App Walk Through ***
+
+1. Navigate to root folder
+2. Create the base project: ng new <project name>
+3. cd <project name>
+4. Run the ng server: ng serve --open 

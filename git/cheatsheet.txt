@@ -49,6 +49,6 @@ stash list : get a list of stashes
 
 
 
+*** REFERNCES ***
 
-References:
 https://www.git-tower.com/learn/git/ebook/en/command-line/basics/working-on-your-project/#start

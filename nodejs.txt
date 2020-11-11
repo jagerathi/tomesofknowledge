@@ -1,0 +1,26 @@
+=== NODE.JS ===
+
+Node Version Manager (windows)
+
+nodist (https://github.com/nulllivex/nodist)
+
+nodist 
+
+nodist global 4.x (global)
+
+nodist local 4.x (directory)
+
+nodist env 4.x (terminal)
+
+nodist nmp global 3.x
+
+nodist dist 
+
+nodist +4.x (checks if version installed and installs if not)
+
+nodist + all (installs everything)
+
+nodist -4.1.1 (removes a version)
+
+nodist --help 
+

@@ -1,0 +1,9 @@
+=== CHEAT SHEET ===
+
+cp - copy files and folders between container and local storage
+
+exec - execute something on the docker instance (docker exec -it <instance name> <command>) [ docker exec -it root_owncloud1 bash ]
+
+logs - view loggers for specified container 
+
+ps - list containers 

@@ -1,0 +1,12 @@
+=== LINUX ===
+
+ls - list files and folders. us -al to make it pretty
+
+ssh -i <key file> ubuntu@<ip address> 
+
+cat 
+
+nano
+
+passwd
+
