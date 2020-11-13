@@ -1,0 +1,53 @@
+=== BIG O ===
+
+Big O notation is a mathmatical notation that descripbes the limiting behavior of a function the argument tends toward a particualr value or infinity.
+
+We use Big O to describe the performance of an algorithm - how does it scale as data grows
+
+Expressed as O(n)
+
+
+O(1) - constant time. takes the same amount of time regardless of input size 
+
+O(log n) - logarithmic time.
+
+O(n) - linear time. 
+
+O(n^2) - quadratic time.
+
+O(2 ^ n) - exponential time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*** References ***
+
+https://codewithmosh.com/
+
+
+
+
+
+
+

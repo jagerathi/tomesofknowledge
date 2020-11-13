@@ -1,0 +1,16 @@
+=== ARRAYS ===
+
+Store a list of items sequentially
+
+Lookup : O(1)
+Insert : O(n)
+Delete : O(n)
+
+Arrays are static. Fixed size when defined.
+
+Must be resized and data copied to grow
+
+Delete requires shifting all remaining items 
+
+
+

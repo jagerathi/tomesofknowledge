@@ -1,0 +1,30 @@
+=== ALGORITHMS ===
+
+A recipe for solving a complex problem 
+
+"Perhaps the most important principle for the good algorithm designer is to refuse to be conent."
+
+Can we do better?
+
+Recursive Algorithm : A function that calls itself with an increasingly smaller input. Must have a base case to prevent infinite looping.
+
+*** Grade School Multiplication ***
+
+
+  5678
+x 1234
+------
+
+
+*** Karatsuba Multiplication ***
+
+	A(56)(78)B
+	C(12)(34)D
+	----------
+	
+	10^n(ac) + 10^n/2( ad + bc ) + bd
+	
+	
+*** Merge Sort ***
+* Been around since 1945 - oldie by goodie
+
