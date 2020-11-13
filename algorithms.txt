@@ -28,3 +28,16 @@ x 1234
 *** Merge Sort ***
 * Been around since 1945 - oldie by goodie
 
+Input: array of n numbers, unsorted.
+Output: same numbers, sorted in increasing order 
+
+		54187263
+		/		\
+	5418		7263
+	  |			  |
+	1458		2367
+		\		/
+		12345678
+		
+
+		
