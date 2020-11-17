@@ -1,0 +1,17 @@
+=== Object Oriented Programming (OOP) ===
+
+Four Pillars
+
+	* Encapsulation
+	* Abstration
+	* Inheritance
+	* Polymorphism
+	
+Solution to procedural programming and spaghetti code
+
+Encapulation
+
+"The best functions are those with no parameters." - Robert Martin (Uncle Bob)
+
+Abstration
+

@@ -1,0 +1,10 @@
+=== AGILE ===
+
+Lean, Fast and Pragmatic
+
+Analysis, Design, Code, and Testing are continuous throughout the project 
+
+Iterative Development 
+
+Adaptive Planning 
+

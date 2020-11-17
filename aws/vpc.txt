@@ -1,0 +1,32 @@
+=== AWS Virtual Private Cloud (VPC) ===
+
+A VPC is your private cloud that runs within the AWS cloud infrastructure 
+
+VPC are REGIONAL
+
+VPC is assigned a CIDR range for IPs (cidr.xyz)
+
+Subnets are partitions within our VPC 
+
+Public Subnet
+	Has access to the internet via Internet Gateway, and internet has access to it 
+
+Private Subnet 
+	More secure without external access from the internet. 
+	Utilize a NAT Gateway (sitting in the public subnet) to allow your private subnet internet access when needed (downloading updates, accessing non-aws resources)
+	
+	
+
+Network ACL (NACL)
+	* A firewall which controls traffic from and to subnet 
+	* Can have ALLOW and DENY rules
+	* Are attached to a subnet level 
+	* Rules on include IP addresses 
+	
+Security Groups
+	* A firewall that controls traffic to and from an ENI / and EC2 instance 
+	* Can have only ALLOW rules 
+	* Rules include IP addresses and other security groups 
+	
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html#VPC_SECURITY_Comparison
+

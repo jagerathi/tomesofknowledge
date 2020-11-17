@@ -1,0 +1,34 @@
+November 17, 2020
+
+After 13 years at my current job, I decided it was time for a change. So, I updated my resume and headed out to land that new gig. No worries, right? I am very employable with a long and varied path of projects, technologies, and solutions. I have climbed the ladder from developer, to lead developer, to software development manager, to CIO. I am ready to get back into development. More coding, less managing. I am ready to get out of the IT grinder and back to what I truly love to do. 
+
+What I am finding is that I am not quite as employable as I thought. First of all, I am expensive. With 23 years of development expirience, I should be able to command the salary I expect. Right? Initially, I rejected for several oppertunities due to salary requirements. With a background mostly in .NET tech stack, that limits the oppertunities. Without a BS in CS, the MCSD i never finished, and not having any sort of security clearance (this is DC after all), I noticed my prospects limited even further.
+
+What to do? First, I need to find some ways to make my experience stand up on my resume better. Going back to school is not really an option, but landing some of those certifications I decided I didn't need couldn't hurt. So, off to Udemy i want, purchased several classes for .NET and AWS certifications. That was a start, but I needed more. It has been 23 years since I had a job interview. I have given many, but I have not done many myself. My first interview was with Amazon for Senior Development Engineer. That was an eye opener. It did not go well. Back to the drawing board. Amazon was something I really wanted. I really wanted to work for a tech company. Not doing tech for a company - but doing tech for a tech company. Amazon was at the top of my list. I was familiar with everything they did and what an oppertunity it would be. So much to learn. And the chance to relocated to Seattle for a while? I was all in for that.
+
+I came out of that situation in June motivated, but with a daunting task ahead of me. So much to do. Time to refresh myself on the basics. Focused on data structures and algorithms for a while. Did several Udemy classes and a bunch of YouTube videos. Purchases a stack of books (yes, i opted for the old-school paper this time) to help my stay connected with the hot items of the day: microservices, agile, tdd, unit testing, clean coding. All things I know well, and use often, but concepts I was finding myself having challenges explaining as well as I would like. 
+
+The other deficency I found is being a bit hamstrung with language. I have a C++ background - did it for 10 years - but that was 13 years ago. Had not toched it in years, and I was certainly not update to date with the latest iteration. I was also lagging behind on all of the hot languages in use now. I have used plenty of JavaScript, but how well can I talk it at an acedemic level? And what about all the JS based frameworks: Angular, AngularJS, React, etc? What about Pyton? Ruby? Ruby on Rails? Go? Even Java? While I can't expect to become an expert in all overnight - there is no reason I can't start learning basics of all (or most) of them. 
+
+I figured the best way to learn is to use them. So, i need a project. Something that I can use to highlight all the buzzwords, patterns, processing, and technology that employers are looking for. But what? I need a good idea. Web front end. Perhaps a desktop app as well. Microservices backend. SQL and NoSQL. RESTful servicves. Event-driven architecture. CI/CD. AWS technologies. Quite an undertaking - but I think it would be good venture for me. Something to keep me busy on the weekends.
+
+After mulling over the options, I decided on Knollitall Computers. The biggest new thing in computers and catering to the affectionado: the developer and the gamer. I am thinking a New Egg / Micocenter hybdrid with a little neighborhood computer store rolled in. I want a big precence, so this will be a combination brick and mortar and web offering. Since we will specialize in build to order (for those that don't care to DIY), we need something for a technicians to build and test new rigs before we delivery them. And since this is a business, we need a backend that will handle the accounting side of things. 
+
+In the end, I want the following:
+
+	* scalable database 
+	* POS solution for my stores 
+	* accounting system for my back office
+	* inventory control for my items 
+	* purchasing 
+	* build configuration
+	* shipping
+	* iOS app 
+	* Android app 
+	* A knollitall credit card with loyalty points 
+	* ecommerce site with BTO support 
+	* utilize, at a minimum, Java, Python, C#, Angular, Docker / Kubernetes, Git
+	* utilize the AWS infrastructure to make this happen
+	* utilize as much Linux infrastructure as possible 
+	
+So, with these lofty goals in mind - i set forward with the plan. For now, I will be using Target Process to 
