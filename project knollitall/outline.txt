@@ -1,0 +1,37 @@
+
+=== Websites ===
+
+* Blog
+* E-Commerce 
+* Admin / Reporting 
+* ECN
+
+
+=== Mobile Apps ===
+
+* E-Commerce 
+* Admin / Reporting 
+
+=== Desktop Apps ===
+
+* POS
+
+
+=== Data Repositories ===
+
+* E-Commerce 
+* Reporting 
+* Blog 
+* Documents 
+
+=== Services ====
+
+* SECURITY 
+* AR
+* AP
+* FIN
+* ECOMM
+* REPORTING 
+* PAY
+* BLOG 
+* 

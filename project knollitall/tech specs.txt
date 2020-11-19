@@ -1,0 +1,37 @@
+=== Languages/Frameworks ===
+
+* JavaScript
+* TypeScript 
+* Node (js)
+* Angular (typescript)
+* Python
+* HTML
+* CSS
+* C# 
+* C++ 
+* Java 
+* React (js)
+* Ruby
+* Ruby on Rails 
+
+=== Technology ===
+
+* mySQL
+* mongoDB
+* memCache 
+* Docker 
+* Linux 
+* Apache 
+* Android 
+* iOS
+* HAProxy
+* AWS
+
+=== Patterns ===
+
+* microservices 
+
+=== Methodologies ===
+
+* Agile (XP)
+* TDD 

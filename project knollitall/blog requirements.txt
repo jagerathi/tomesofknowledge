@@ -1,0 +1,37 @@
+=== MY BLOG ===
+
+Front End: Angular 
+Back End: Node.js
+
+
+=== Feature List ====
+
+Feature the last entry 
+
+Give me quick access to the last 5 entries 
+
+Archive access to anything over 5
+
+Search active and archives 
+
+Allow users to leave comments 
+
+Basic accounts
+
+Admin account for adding new content 
+
+
+
+
+
+
+
+*** REFERENCE ***
+
+https://medium.com/@angularlicious/https-medium-com-angularlicious-simple-angular-blog-engine-part-1-1b95233d0b51
+
+https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-home--cms-30129
+
+https://codeburst.io/blogging-app-using-angular-c9a24c9e3db0
+
+https://www.djamware.com/post/5d88cb43e7939eec17dc4c89/mean-stack-angular-8-tutorial-build-a-simple-blog-cms

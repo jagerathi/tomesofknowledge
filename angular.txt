@@ -18,3 +18,16 @@ ng generate service <name>
 2. Create the base project: ng new <project name>
 3. cd <project name>
 4. Run the ng server: ng serve --open 
+
+
+
+
+
+
+
+
+*** REFERENCES ***
+
+https://medium.com/@angularlicious
+
+https://code.tutsplus.com/tutorials/creating-a-blogging-app-using-angular-mongodb-home--cms-30129
