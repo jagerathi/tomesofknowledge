@@ -15,3 +15,22 @@ Encapulation
 
 Abstration
 
+ * Simpler Interface
+ * Reduce the impact of change
+ 
+Inheritance
+
+ * allows you to eliminate redundant code 
+
+Polymorphism
+
+ * many forms 
+ * eliminates if and case situations
+ 
+ 
+Benefits
+
+ * Encapsulation - Reduce complexity and increase reusablility
+ * Abstrations - Reduce complexity and isolate impact of changes 
+ * Inheritance - Eliminate redundant code 
+ * Polymorphism - Refactor ugly switch/case statements 

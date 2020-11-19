@@ -10,3 +10,10 @@ nano
 
 passwd
 
+
+
+*** FOR WINDOWS ***
+
+- Windows Subsystem for Linux 
+- Windows Terminal
+
