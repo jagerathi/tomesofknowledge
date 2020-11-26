@@ -1,0 +1,76 @@
+=== TECH DEPT ===
+
+*** Languages ***
+
+Pyton
+JavaScript
+C++ 11+
+Ruby
+Java
+Kotlin
+TypeScript
+
+*** DevOps ***
+Git
+GitHub
+Jenkins 
+Octopus
+Jira 
+Confluence
+
+*** Frameworks ***
+
+Angular
+Spring
+Django
+Hibernate
+NodeJS
+Ruby on Rails 
+ReactJS
+Bootstrap
+
+*** Unit Testing ***
+
+Google Test
+Google Mock
+JUnit
+Katalon
+
+
+*** Containerization ***
+
+Docker
+Kubernetes
+Swarm
+
+*** Agile ***
+
+Scrum
+Kanban
+User Stories
+SAFe
+
+*** Operating Systems ***
+
+Linux
+MacOS
+iOS
+Android 
+
+*** Cloud ***
+
+AWS DevOps 
+Azure Essentials
+Azure DevOps
+
+*** Databases ***
+
+MondoDB
+NoSQL
+MySQL
+Oracle
+PostgreSQL
+
+*** Other ***
+
+Security clearance 
