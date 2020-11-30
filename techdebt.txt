@@ -28,6 +28,9 @@ NodeJS
 Ruby on Rails 
 ReactJS
 Bootstrap
+J2EE
+Scala
+Kafka
 
 *** Unit Testing ***
 
