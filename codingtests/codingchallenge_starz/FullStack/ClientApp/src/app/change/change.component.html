@@ -1,0 +1,18 @@
+<h1>Change Component Status</h1>
+
+<p>Change a component status and validate it was changed in the component list.</p>
+
+<form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    Id
+    <input type="number" formControlName="id" required>
+  </label>
+
+  <label>
+    Status
+    <input type="text" formControlName="status" required>
+  </label>
+
+  <button class="btn btn-primary" type="submit" [disabled]="!uploadForm.valid">Submit</button>
+</form>

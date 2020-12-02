@@ -1,0 +1,9 @@
+﻿.vs
+FullStack.Application/obj
+FullStack.Domain/obj
+FullStack.Persistence/obj
+FullStack.Application/bin
+FullStack.Domain/bin
+FullStack.Persistence/bin
+FullStack.Tests/bin
+FullStack.Tests/obj

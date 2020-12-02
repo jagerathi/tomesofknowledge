@@ -1,0 +1,22 @@
+<h1 id="tableLabel">Component List</h1>
+
+<p *ngIf="!components"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="components">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of components">
+      <td>{{ c.id }}</td>
+      <td>{{ c.name }}</td>
+      <td>{{ c.status }}</td>
+      <td>{{ c.type }}</td>
+    </tr>
+  </tbody>
+</table>
