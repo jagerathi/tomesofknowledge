@@ -32,6 +32,12 @@ J2EE
 Scala
 Kafka
 
+*** Mobile ***
+
+Xamarin
+Swift
+Objective-C
+
 *** Unit Testing ***
 
 Google Test

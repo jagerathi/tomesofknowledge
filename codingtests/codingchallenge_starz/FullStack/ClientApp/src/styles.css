@@ -14,3 +14,21 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.btn-nav {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+  width: 100px;
+}
+
+th {
+  height: 40px;
+}
+
+th a {
+  display: block;
+  background-color: fuchsia;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,34 @@
+
+=== GitHub Flow ===
+
+1. create a branch 
+2. add and commit to your branch with good comments 
+3. open a pull request 
+4. discuss and review your code 
+5. deploy for testing 
+6. merge your changes into master 
+
+
+=== Git Branching Model ===
+
+Main branches 
+
+	Master - this is the production ready code base 
+	Develop - this is the latest working version of code in development. this is what the nighly build should be using.
+	
+Supporting branches
+	
+	Short-lived and always branched from develop 
+	
+	* Feature
+	* Release
+	* Hotfix
+	
+Change branch 
+
+	$ git checkout <branchname>
+	
+Creating a feature branch 
+
+	$ git checkout -b <branchname> develop
+	

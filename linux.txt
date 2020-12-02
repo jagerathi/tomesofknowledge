@@ -8,8 +8,9 @@ cat
 
 nano
 
-passwd
+sudo passwd <username>
 
+df -h // check available space on volumes
 
 
 *** FOR WINDOWS ***
