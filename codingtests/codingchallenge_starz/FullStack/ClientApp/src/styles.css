@@ -24,6 +24,8 @@ code {
 
 th {
   height: 40px;
+  cursor: pointer;
+  background-color: lightgray;
 }
 
 th a {

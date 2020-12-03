@@ -1,0 +1,84 @@
+=== TYPESCRIPT ===
+
+TypeScript is a superset of JavaScript
+
+*** Declaring Variables ***
+
+	var value: number;
+	let value: number;
+	
+	var is function scoped while let is local scoped 
+
+*** Type Assertion ***
+
+	(<string>message).endsWith('c');
+	or
+	(message as string).endWith('c');
+
+
+*** Arrow Function ***
+	(lambda in c#)
+	
+	let log = function(message) {
+		console.log(message);
+	}
+	
+	same as 
+	
+	let log = function(message) => console.log(message);
+	
+*** Custom Types ***
+
+	interface Point {
+		x: number,
+		x: number,
+		draw(): () => void
+	}
+	
+*** Classes ****
+
+	class Point {
+	
+		x: number;
+		y: number;
+		
+		constructor(x?: number, y?: number) {
+			this.x = x;
+			this.y = y;
+		}
+		
+		draw() {
+			console.log('X: ' + this.x + ', Y: ' + this.y);
+		}
+		
+		distanceFrom(anotherPoint: Point) {
+		
+		}
+	
+	}
+	
+	let point = new Point();
+	point.x = 1;
+	point.y = 2;
+	point.draw();
+	
+	let point2 = new Point(3,4);
+	point.draw();
+	
+*** Access Modifiers ***
+
+	* public 
+	* private 
+	* protected
+	
+	By default, all members are public
+	
+	A constructor with an access modifier will automatically assign and generate the properties 
+	
+
+
+
+
+	
+
+

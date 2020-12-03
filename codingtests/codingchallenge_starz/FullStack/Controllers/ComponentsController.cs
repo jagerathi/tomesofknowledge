@@ -37,5 +37,11 @@ namespace FullStack.Controllers
 
 
         //TODO Number 3, Implement the UpdateComponent API
+        [HttpPut("updatecomponent/{id}")]
+        public async Task<ActionResult> UpdateComponent([FromRoute] int id, [FromQuery]UpdateComponentViewModel updateComponentView)
+        {
+            await _componentService.UpdateComponent(id, updateComponentView);
+            return Ok();
+        }
     }
 }

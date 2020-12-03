@@ -5,10 +5,10 @@
 <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="components">
   <thead>
     <tr>
-      <th><a href="#" (click)="sort(0)">Id</a></th>
-      <th>><a href="#" (click)="sort(1)">Name</th>
-      <th>><a href="#" (click)="sort(2)">Status</th>
-      <th>><a href="#" (click)="sort(3)">Type</th>
+      <th (click)="sort(0)">Id</th>
+      <th (click)="sort(1)">Name</th>
+      <th (click)="sort(2)">Status</th>
+      <th (click)="sort(3)">Type</th>
     </tr>
   </thead>
   <tbody>

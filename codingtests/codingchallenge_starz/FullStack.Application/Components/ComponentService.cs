@@ -39,29 +39,29 @@ namespace FullStack.Application.Components
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_NAME && sortDirection == SortDirConstants.SORT_DIR_ASC)
             {
-                components = components.OrderBy(x => x.Name).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderBy(x => x.Name).ThenBy(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
                 
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_NAME && sortDirection == SortDirConstants.SORT_DIR_DESC)
             {
-                components = components.OrderByDescending(x => x.Name).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderByDescending(x => x.Name).ThenByDescending(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_TYPE && sortDirection == SortDirConstants.SORT_DIR_ASC)
             {
-                components = components.OrderBy(x => x.Type).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderBy(x => x.Type).ThenBy(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_TYPE && sortDirection == SortDirConstants.SORT_DIR_DESC)
             {
-                components = components.OrderByDescending(x => x.Type).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderByDescending(x => x.Type).ThenByDescending(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_STATUS && sortDirection == SortDirConstants.SORT_DIR_ASC)
             {
-                components = components.OrderBy(x => x.Status).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderBy(x => x.Status).ThenBy(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
                 
             }
             else if(sortBy == SortFieldConstants.SORT_FIELD_STATUS && sortDirection == SortDirConstants.SORT_DIR_DESC)
             {
-                components = components.OrderByDescending(x => x.Status).Skip(pageSize*pageNo).Take(pageSize).ToList();
+                components = components.OrderByDescending(x => x.Status).ThenByDescending(x => x.Id).Skip(pageSize*pageNo).Take(pageSize).ToList();
             }
         
 

@@ -20,9 +20,26 @@ ng generate service <name>
 4. Run the ng server: ng serve --open 
 
 
+*** Binding ***
 
+	DOM (Document Object Model) - mostly maps 1 to 1 with html attributes ( https://www.w3schools.com/jsref/dom_obj_all.asp )
 
+	Property Binding	- <img [src]="imageUrl" /> 
+	Attribute Binding 	- <td [attr.colspan]="colSpan"></td> (use this when the html attribute is not part of the dom object model)
+	Class Binding		- <button class="btn btn-primary" [class.active]="isActive">Save</button>
+	Style Binding 		- <button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button> (use the dom style object property) ( https://www.w3schools.com/jsref/dom_obj_style.asp )
+	Event Binding		- <button (click)="onSave()">Save</button> or <button (click)="onSave($event)">Save</button>
+	Event Filtering		- <input (keyup.enter)="onKeyUp($event)" />
+	Template Variables 	- <input #email (keyup.enter)="onKeyUp(email.value)" />
+	Two-Way Binding		- <input ([ngModel])="email" (keyup.enter)="onKeyUp()" /> (banana in a box :) - don't forget the module FormsModule )
 
+*** Adding Bootstrap ***
+
+	getbootstrap.com
+	
+	npm install bootstrap --save 
+	
+	@import "~bootstrap/dist/css/bootstrap.css" - add this to your styles.css 
 
 
 
