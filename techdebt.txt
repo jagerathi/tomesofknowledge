@@ -11,6 +11,7 @@ Kotlin
 TypeScript
 
 *** DevOps ***
+
 Git
 GitHub
 Jenkins 
@@ -32,6 +33,12 @@ J2EE
 Scala
 Kafka
 
+*** Concepts ***
+
+Paralell processing
+Templates (C++)
+Multi-Threading
+
 *** Mobile ***
 
 Xamarin
@@ -44,7 +51,6 @@ Google Test
 Google Mock
 JUnit
 Katalon
-
 
 *** Containerization ***
 

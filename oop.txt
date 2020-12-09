@@ -27,6 +27,9 @@ Polymorphism
  * many forms 
  * eliminates if and case situations
  
+ * According to Bjarne Stroustrup, father of C++ language,
+		polymorphism — providing a single interface to entities of different types. virtual functions provide dynamic (run-time) polymorphism through an interface provided by a base class. Overloaded functions and templates provide static (compile-time) polymorphism.
+ 
  
 Benefits
 
@@ -34,3 +37,19 @@ Benefits
  * Abstrations - Reduce complexity and isolate impact of changes 
  * Inheritance - Eliminate redundant code 
  * Polymorphism - Refactor ugly switch/case statements 
+ 
+ 
+ Static Polymorphism
+ 
+	* occurs at compile time 
+	* early binding process
+	* faster
+	* overloaded functions and templates that happen at compile time 
+ 	* Static Polymorphism is the linking of a function with an object during compile time is called static. It is also called static binding. C# provides two techniques to implement static polymorphism i.e. Function overloading and Operator overloading.
+ 
+ Dynamic Polymorphism
+ 
+	* occurs at runtime
+	* late binding 
+	* interfaces that happen at run-time 
+ 
