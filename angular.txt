@@ -40,6 +40,11 @@ ng generate service <name>
 	npm install bootstrap --save 
 	
 	@import "~bootstrap/dist/css/bootstrap.css" - add this to your styles.css 
+	
+	
+*** Pipes ***
+
+	{{ f.value | json }} - display as json 
 
 
 
