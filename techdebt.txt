@@ -32,6 +32,7 @@ Bootstrap
 J2EE
 Scala
 Kafka
+Entity Framework Core
 
 *** Concepts ***
 

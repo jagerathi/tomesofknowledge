@@ -1,0 +1,44 @@
+=== Creating an Angular site with .net core api backend ===
+
+*** create a linux SQL server on docker ***
+
+	1. docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=MyComplexPassword!234' -p 1433:1433 -d microsoft/mssql-server-linux
+
+	* docker ps to make sure it is running.
+	* if you don't see it, docker ps -a 
+	* docker logs <container name> to see the logs if it is not working
+
+
+*** creating the project template ***
+
+	1. Navigate to the root folder
+	2. Create a new folder for the new project and enter that folder
+	3. Run "dotnet new angular" to generate the project template
+
+
+*** entity framework ***
+
+	* code first process 
+
+	1. dotnet add package Microsoft.EntityFrameworkCore
+	2. dotnet add package Microsoft.EntityFrameworkCore.Design
+	3. dotnet tool install --global dotnet-ef (install the EF cli)
+	
+** migration **
+
+	1. dotnet ef migrations add InitialModel
+	1a. dotnet ef migrations remove to remove the last migration 
+	2. dotnet ef database update
+	
+
+** adding a data model **
+
+	1. create the domain object
+	2. create the dto class (resource)
+	3. add the AutoMapper configuration
+	4. add the DbSet in the DbContext
+	5. add the getter in the Api Controller
+	6. generate the migration class - dotnet ef migrations <MigrationName>
+	7. update the database - dotnet ef database update 
+	8. run the application - dotnet watch run 
+	9. go to the website and call the api getter (http://localhost:5001/api/makes) to see the JSON payload

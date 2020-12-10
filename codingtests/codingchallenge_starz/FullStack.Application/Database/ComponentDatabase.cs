@@ -24,10 +24,14 @@ namespace FullStack.Application.Database
             return Task.FromResult(_data.AsEnumerable());
         }
 
-        public static Component GetById(int id) 
+        public static Task<Component> GetById(int id) 
         {
-            if(_data==null) return null;
-            return _data.FirstOrDefault(x => x.Id == id);
+            if(_data==null) 
+            {
+                GetComponents();
+            }
+
+            return Task.FromResult(_data.FirstOrDefault(x => x.Id == id));
         }
     }
 }

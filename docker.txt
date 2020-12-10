@@ -7,3 +7,7 @@ exec - execute something on the docker instance (docker exec -it <instance name>
 logs - view loggers for specified container 
 
 ps - list containers 
+
+docker ps -a // see terminated images 
+
+docker logs <instance name>

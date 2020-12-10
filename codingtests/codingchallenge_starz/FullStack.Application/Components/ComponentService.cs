@@ -80,8 +80,8 @@ namespace FullStack.Application.Components
         /// <returns></returns>
         public async Task UpdateComponent(int id, UpdateComponentViewModel updateComponentViewModel)
         {
-            var component = ComponentDatabase.GetById(id);
-            if(component==null) throw new Exception("the requested id was not found.");
+            var component = await ComponentDatabase.GetById(id);
+            if(component==null) throw new Exception($"the requested id - {id} - was not found.");
 
             component.Status = updateComponentViewModel.Status;
         }

@@ -41,7 +41,7 @@ namespace FullStack.Controllers
         public async Task<ActionResult> UpdateComponent([FromRoute] int id, [FromQuery]UpdateComponentViewModel updateComponentView)
         {
             await _componentService.UpdateComponent(id, updateComponentView);
-            return Ok();
+            return Ok(id);
         }
     }
 }

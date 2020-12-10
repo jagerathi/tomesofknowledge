@@ -1,8 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-change',
@@ -42,14 +41,12 @@ export class ChangeComponent {
     console.warn(this.uploadForm.value);
 
     let url = this.url + '/updatecomponent/' + this.uploadForm.get('id').value;
-    console.log(url);
+    url += "?Status=" + this.uploadForm.get('status').value;
 
-    let request = { Status: this.uploadForm.get('status').value };
-
-    //return this.http.put(url, request, this.headers).pipe(catchError(this.handleError<any>('onSubmit')));
-
-    this.http.put(url, { headers: this.headers, params: request });
-
+    this.http.put(url, this.headers)
+      .subscribe(response => {
+        console.log(response);
+      });
   }
 
   private handleError<T>(operation = 'operation', result?: T) {
