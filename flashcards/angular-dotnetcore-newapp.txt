@@ -1,0 +1,5 @@
+*** creating the project template ***
+
+	1. Navigate to the root folder
+	2. Create a new folder for the new project and enter that folder
+	3. Run "dotnet new angular" to generate the project template

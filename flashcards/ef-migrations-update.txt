@@ -1,0 +1,5 @@
+** migration **
+
+	1. dotnet ef migrations add <MigrationName> - create a migration 
+	1a. dotnet ef migrations remove - to remove the last migration 
+	2. dotnet ef database update - commit the changes to the database 

@@ -1,0 +1,7 @@
+*** Adding Bootstrap ***
+
+	getbootstrap.com
+	
+	npm install bootstrap --save 
+	
+	@import "~bootstrap/dist/css/bootstrap.css" - add this to your styles.css 

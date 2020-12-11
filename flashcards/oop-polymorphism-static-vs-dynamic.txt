@@ -1,0 +1,13 @@
+Static Polymorphism
+ 
+	* occurs at compile time 
+	* early binding process
+	* faster
+	* overloaded functions and templates that happen at compile time 
+ 	* Static Polymorphism is the linking of a function with an object during compile time is called static. It is also called static binding. C# provides two techniques to implement static polymorphism i.e. Function overloading and Operator overloading.
+ 
+ Dynamic Polymorphism
+ 
+	* occurs at runtime
+	* late binding 
+	* interfaces that happen at run-time 

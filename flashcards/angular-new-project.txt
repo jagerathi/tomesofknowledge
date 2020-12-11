@@ -1,0 +1,6 @@
+*** Angular Base App Walk Through ***
+
+1. Navigate to root folder
+2. Create the base project: ng new <project name>
+3. cd <project name>
+4. Run the ng server: ng serve --open 
