@@ -1,0 +1,50 @@
+*** CODE REVIEW ***
+
+** GENERAL **
+
+	* Naming conventions
+	* 
+
+
+** CODE DESIGN **
+
+	* Does it make sense?
+	* Does the code belong in the codebase, or a library?
+	* Does it integrate well with the rest of your system?
+
+** TEST COVERAGE **
+
+	* Is the code well tested?
+	* Is the test coverage adequate?
+	* Are the tests testing the right things? Are the dependancies correct?
+
+** READABILITY **
+
+	* Is the code understandable to someone with little or no expirience with the codebase?
+	* Is is using any esoteric language features? Are they needed? Do they impact readability?
+	* 
+
+** DOCUMENTATION **
+
+	* Do comments exist that describe the intent of the code when needed?
+	* Are any unusual handling or edge-conditions documented?
+	* Are the use and fuction of 3rd party libraries documented?
+	* Are data structures and unit of measures explained?
+	* Is there any incomplete code?
+
+** SECURITY **
+
+	* Does this impact payments? permissions? user authentication? 
+	* Are we open to sql injection attacks?
+	* Are we exposed to XSS vulnerabilities?
+
+
+
+
+
+
+
+
+*** References ***
+
+https://www.pullrequest.com/blog/what-belongs-in-an-effective-code-review-checklist/?gclid=EAIaIQobChMIjfvAhb7S7QIVEW6GCh3jfQhAEAAYASAAEgKnC_D_BwE
