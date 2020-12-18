@@ -1,0 +1,9 @@
+*** CODE DESIGN ***
+
+** OBJECT ORIENTED ANALSYS and DESIGN PRINCIPLES **
+
+    * Single Responsibility Principle - 
+    * Open-Close Principle - 
+    * Liskov Substituion Princile - 
+    * Interface Segregation - 
+    * Dependency Injection - 

@@ -3,7 +3,7 @@
 ** GENERAL **
 
 	* Naming conventions
-	* 
+	* Does it do what it is supposed to do?
 
 
 ** CODE DESIGN **
@@ -11,9 +11,46 @@
 	* Does it make sense?
 	* Does the code belong in the codebase, or a library?
 	* Does it integrate well with the rest of your system?
+	* Proper usage of framework / API / Library / Services
+	* Can it be simplified?
+	* Is it at the right abstration level?
+	* Are we modular enough?
+	* Are there any best practices, design patterns, or language-specific patterns that could improve this code?
+	* Does it follow OOP principles: Single Responsibility, Open-Close principle, Liskov Substitution Principle, Interface Segragation, Dependancy Injection?
+
+** MAINTAINABILITY **
+
+	* Is it tightly coupled?
+	* 
+
+** ERROR HANDLING and LOGGING **
+
+	* Is error handling done correctly?
+	* Should any logging be added or removed?
+	* Are the errors user-friendly?
+	* Are there enough log events and are they written in a way that allows for easy debugging?
+
+** USABILITY **
+
+	* Is the solution well designed from a usability perspective?
+	* Is the API well documented?
+	* Is the solution (UI) accessible?
+	* Is the API/UI intuitive to use?
+
+** ETHICS and MORALITY **
+
+	* Does it use user data in a way that might raise privacy concerns?
+	* Does the change exploit behavorial patterns or human weaknesses?
+	* Might the code lead to mental and physical harm for some users?
+	* Are appropriate measures in place to prevent/limit/report harrassment or abuse?
+	* Does this change lead to exclusion of a certain group of people or users?
+	* Does this change introduce any algorithm, AI or machine learning bias?
+	* Does this code change introduce any gender/racial/political/religious bias?
+	
 
 ** TEST COVERAGE **
 
+	* Is the code testable?
 	* Is the code well tested?
 	* Is the test coverage adequate?
 	* Are the tests testing the right things? Are the dependancies correct?
@@ -39,6 +76,12 @@
 	* Are we exposed to XSS vulnerabilities?
 
 
+** SELF CHECK **
+
+	* Code compiles and passes static analysis without warnings
+	* Code passes all tests 
+	* No spelling errors 
+	* You have outlined what the change is about including the reason for the change and what changed 
 
 
 
@@ -48,3 +91,6 @@
 *** References ***
 
 https://www.pullrequest.com/blog/what-belongs-in-an-effective-code-review-checklist/?gclid=EAIaIQobChMIjfvAhb7S7QIVEW6GCh3jfQhAEAAYASAAEgKnC_D_BwE
+
+https://www.michaelagreiler.com/code-review-checklist-2/
+
