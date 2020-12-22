@@ -1,0 +1,15 @@
+=== MYSQL ===
+
+*** create a linux SQL server on docker ***
+
+	1. docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=MyComplexPassword!234' -p 1433:1433 -d microsoft/mssql-server-linux
+
+	* docker ps to make sure it is running.
+	* if you don't see it, docker ps -a 
+	* docker logs <container name> to see the logs if it is not working
+	
+	
+*** management tools ***
+
+	1. HeidiSQL
+	2. MySQL Workbench

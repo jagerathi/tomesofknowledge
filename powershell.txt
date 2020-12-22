@@ -1,3 +1,22 @@
 === POWERSHELL ===
 
-get uptime : (get-date)-(gcim Win32_OperatingSystem).LastBootUpTime
+*** get uptime ***
+
+	(get-date)-(gcim Win32_OperatingSystem).LastBootUpTime
+	
+*** run sql ***
+
+	$SQLServer = "aws-sql2"
+	$db3 = "abcv2"
+	$uid = "sa"
+	$pwd = "SgQ>RQZ.p-SU9J#rrV{3L,8"
+	$query = "select top 5 * from itm_item order by id desc"
+
+	# hard-coded command 
+	Invoke-Sqlcmd -ServerInstance $SQLServer -Database $db3 -Username $uid -Password $pwd -Query $query | Export-Csv "testoutput.txt" -Delimiter "," -NoTypeInformation
+	
+	# Skip the headers
+	Invoke-Sqlcmd -ServerInstance $SQLServer -Database $db3 -Username $uid -Password $pwd -Query $query | ConvertTo-Csv -NoTypeInformation | Select-Object -Skip 1 | Set-Content "testoutput.txt"
+
+	# command in external file 
+	Invoke-Sqlcmd -ServerInstance $SQLServer -Database $db3 -Username $uid -Password $pwd -InputFile "c:\abc\acr_import\abc.sql" | Export-Csv "c:\abc\acr_import\acr_projects.txt" -Delimiter "," -NoTypeInformation

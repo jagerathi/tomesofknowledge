@@ -1,0 +1,17 @@
+=== PATTERNS ===
+
+*** Request-Response Pattern ***
+
+	Request–response is a message exchange pattern in which a requestor sends a request message to a replier system which receives and processes the request, 
+	ultimately returning a message in response. This is a simple, but powerful messaging pattern which allows two applications 
+	to have a two-way conversation with one another over a channel. 
+	This pattern is especially common in client–server architectures.
+	
+*** Publisher / Subscriber Pattern ***
+
+*** Factory ***
+
+
+
+
+	

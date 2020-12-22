@@ -1,0 +1,15 @@
+==== TSQL ====
+
+*** Forget me nots ***
+
+	* Extract network name from email address 
+	SELECT SUBSTRING( email, 0, CHARINDEX(email, '@', 0))
+
+*** Base64 Encode / Decode ***
+
+	declare @encoded varchar(500), @decoded varchar(500)
+
+	SET @encoded = CONVERT( VARCHAR(500), (SELECT CAST('kevinknoll' as varbinary(max)) FOR XML PATH(''), BINARY BASE64 ))
+	SET @decoded = CONVERT( VARCHAR(500), CONVERT(XML, @Encoded).value('.', 'varbinary(max)'))
+
+	SELECT @encoded, @decoded 
