@@ -1,0 +1,27 @@
+==== PYTON ====
+
+*** check version ***
+
+    * py --version
+    * py -[23] --version 
+
+*** run a version ***
+
+    * py -2 // run version 2
+    * py -3 // run version 3
+
+*** install pip ***
+
+    1. download get-pip.py  (https://pip.pypa.io/en/latest/installing/#installing-with-get-pip-py)
+    2. py -2 get-pip.py
+
+*** install django ***
+
+    1. py -2 -m pip install django==1.11.5 <no version to install latest)
+
+    ** version check **
+
+    1. py -2
+    2. import django 
+    3. print(django.get_version())
+
