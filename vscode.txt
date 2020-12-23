@@ -1,2 +1,18 @@
 === VS CODE ====
 
+*** Create a .net core console app ***
+
+	1. Browse to your root folder
+	2. Create a new project folder 
+	3. CD new folder 
+	4. vscode .
+	5. open terminal in vs code 
+	6. dotnet new console 
+	7. dotnet run 
+	
+	** to pass arguments to console app, dotnet run -- -arg1=yes -arg2=no // the key is the "--" after run 
+	
+	
+
+	
+	
