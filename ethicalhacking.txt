@@ -1,0 +1,10 @@
+==== ETHICAL HACKING ====
+
+*** KALI LINUX ***
+
+    * kali.org/downloads
+
+*** VIRTUALBOX ***
+
+    * virtualbox.org
+
