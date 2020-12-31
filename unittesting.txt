@@ -57,3 +57,19 @@
 		** Act
 		** Asset 
 		
+
+*** Characteristics of a good unit test ***
+
+	* First-class citizen
+	* clean, readable and maintainable 
+	* no logic 
+	* isolated 
+	* not too specific or general 
+
+*** What to test? ***
+
+	* Testable code is clean, clean code is testable 
+	* Query - returns data 
+	* Command - runs a command 
+	* 
+
