@@ -1,0 +1,59 @@
+==== UNIT TESTING ====
+
+* UNIT TEST = Tests a unit of an application without its external dependancies 
+
+	* Cheap to write 
+	* execute fast 
+	
+* INTEGRATION TEST = Tests the application with its external dependancies
+
+	* take longer to execute 
+	* give you more confidence in the health of your application 
+	
+* END-TO-END Test 
+
+	* Drives an application through its UI 
+	* Give you the greatest confidence 
+	* Very slow 
+	* Very brittle 
+	
+*** Test Pyramid ***
+
+	E2E				    ==
+	Integration 	  ======
+	Unit			==========
+	
+	* Favor units because they are cheap and fast 
+	* cover unit test gaps with integration tests 
+	* Use end-to-end tests sparingly
+	
+*** Testing Frameworks ***
+
+	* NUnit
+	* MSTest
+	* xUnit 
+	
+*** MSTest ***
+
+	* Test class is decorated with [TestClass]
+	* Test method is decorated with [TestMethod]
+	* Asset.IsTrue()
+	
+*** NUnit ***
+
+	* Install through package manager: 
+		install-package NUnit -Version 3.8.1
+		install-package NUnit3TestAdapter -Version 3.8.0
+	* Test class is decorated with [TestFixture]
+	* Test method is decorated with [Test]
+	* Asset.That()
+	
+*** Conventions ***
+
+	* Project name should be MainProjectName.UnitTests
+	* Class name should match the class we are testing - Reservations would be ReservationTests 
+	* Test setup - Triple A
+		** Arrange
+		** Act
+		** Asset 
+		
