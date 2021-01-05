@@ -1,0 +1,43 @@
+=== OSI MODEL ===
+
+7 - APPLICATION
+
+    * smarts in the applications that make them network aware 
+    * incoming and outgoing ports 
+    * port identifies the application 
+
+6 - PRESENTATION
+
+    * old and weird
+    * data conversion for applications to read
+    * not really used any longer 
+
+5 - SESSION
+
+    * connectivity between devices
+    * data and port info
+
+4 - TRANSPORT
+
+    * disassemble and reassemble data
+    * TCP segment
+    * sequencing of packages (chunking of data)
+
+
+3 - NETWORK
+
+    * IP addresses (from and to)
+    * IP packet
+
+2 - DATA LINK
+
+    * mac address 
+
+1 - PHYSICAL
+
+    * cables, network cards 
+    * ethernet frame
+
+
+
+

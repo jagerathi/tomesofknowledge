@@ -1,0 +1,28 @@
+=== FRAMES ===
+
+Frames and Packets are often interchanged incorrectly. Frames encapsulate Packets with transport details. 
+
+Packetized Data - cornerstone of networking 
+
+Frame = 1,500 bytes 
+
+Frames are created and destroyed within the NIC 
+
+
+Frame Composition
+
+    * Destination MAC 
+    * Source MAC
+    * Destination IP
+    * Source IP 
+    * Destination Port 
+    * Source Port 
+    * Data 
+    * Cyclic redundancy check (CRC)
+
+Frame will change during transmission, but the IP packet does not change 
+
+
+
+
+

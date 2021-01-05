@@ -1,0 +1,6 @@
+=== COMMANDS ===
+
+IPCONFIG
+
+    * /all for all interfaces 
+

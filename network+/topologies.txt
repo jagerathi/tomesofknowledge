@@ -1,0 +1,32 @@
+=== TOPOLOGIES ===
+
+LOGICAL 
+
+    * The electronic flow of frames 
+
+BUS 
+
+    * All devices connect on a single cable 
+
+RING 
+
+    * Single ring of cabling. No ends. 
+
+STAR 
+
+    * Individual hosts plugged into a block in the middle 
+
+HYBRID STAR-BUS 
+
+    * Bus is replaced with Hub / Switch 
+    * Devices connect to the "bus" in a star pattern 
+    * The primary topology that is used today 
+
+MESH
+
+    * Unique to wireless networks 
+    * All hosts connected directly to each other 
+    * Can be fully meshed or partially meshed 
+
+
+

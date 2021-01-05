@@ -1,0 +1,22 @@
+=== NETWORKING EQUIPMENT ===
+
+HUB 
+
+    * connects multiple devices 
+    * incoming frames are copies and broadcasted to all connected devices 
+
+MAC (Media Address Control)
+
+    * 48 bits - 8 hexadecimal pairs
+    * First 6 characters are OEM id
+    * Last 6 characters are the unique id 
+
+ROUTER 
+
+    * At least 2 connections 
+    * Often combined with a switch 
+    * used to connect multiple local networks 
+
+SWITCH 
+
+    * 

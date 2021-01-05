@@ -1,0 +1,26 @@
+=== LEXICON ===
+
+MAC - Media Access Control 
+
+UNICAST - Sends to a specific MAC address 
+
+BROADCAST - Sends to all listeners - uses MAC address FF-FF-FF-FF-FF-FF
+
+BROADCAST DOMAIN - Everyone who can hear a broadcast 
+
+LOGICAL ADDRESSING - most common is IP addressing. not fixed to a device like a MAC address.
+
+DEFAULT GATEWAY - typically identifies the router 
+
+ROUTING TABLE - tell the router where to send frames 
+
+PORTS - Range of 0 to 65535. First 1024 are "well known" and have special use 
+
+TCP - Transmission Control Protocal. Connection oriented. 
+
+UDP - User Datagram Protocal. Not connection oriented. 
+
+TOPOLOGY - 
+
+IEEE - American standards organization that establishes networking standards. 802.x are networking standards. 
+

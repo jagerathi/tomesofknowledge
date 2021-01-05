@@ -1,0 +1,24 @@
+=== TCP/IP MODEL ===
+
+
+4 - APPLICATION
+
+    * data and port info
+
+3 - TRANSPORT
+
+    * assembly and disassembly
+    * moving chunks of data
+    * IP segment
+ 
+
+2 - INTERNET 
+
+    * ip 
+    * routers
+    * IP package
+
+1 - NETWORK INTERFACE (LINK)
+
+    * hardware and cables 
+    * ethernet frame

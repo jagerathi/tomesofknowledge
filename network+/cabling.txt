@@ -1,0 +1,95 @@
+=== CABLING ===
+
+COAXIAL 
+
+    * Dates back to WWII
+    * Composition
+        * COPPER CONDUCTOR
+        * INSULATION 
+        * SECOND CONDUCTOR 
+        * PVC Case 
+    * RG Rating (Radio Grade)
+        * RG-58 - 50ohm rating. One of the oldest types used in networking. BNC connector. 
+        * RG-59 - 75ohm rating. Threaded connector - F-Type.
+        * RG-6 - 75ohm. Most common. Thicker than RG-59. Threaded F-Type connector.
+
+TWISTED PAIR 
+
+    * Created in the late 60s for phones
+    * Most common is Unshielded Twisted Pair - which lacks any external shielding.
+    * Networking typically uses 4 pair cables 
+    * Standards
+        * 568A
+            * 8 - Brown 
+            * 7 - Brown/White 
+            * 6 - Orange 
+            * 5 - Blue/White 
+            * 4 - Blue 
+            * 3 - Orange White 
+            * 2 - Green 
+            * 1 - Green/White 
+        * 568B
+            * 8 - Brown 
+            * 7 - Brown/White 
+            * 6 - Green 
+            * 5 - Blue/White 
+            * 4 - Blue 
+            * 3 - Green/White 
+            * 2 - Orange 
+            * 1 - Orange/White 
+    * Solid core or Stranded core 
+    * Shielded Twisted Pair (STP) - fully shielded for situations where inteferance is a concern 
+
+CAT RATING 
+
+    * CAT 3 - 10 Mbps 
+    * CAT 5 - 100 Mbps @ 100m
+    * CAT 5E - 1000 Mbps @ 100m
+    * CAT 6 - 1 Gbps @ 100m
+    * CAT 6a - 10 Gbps @ 100m
+    * CAT 7 - 10 Gbps @ 100m - fully shielded 
+
+FIBER-OPTICS
+
+    * Composition 
+        * Core 
+        * Cladding
+        * Jacket 
+    * Multi-mode - 2 connectors. uses LED to transmit light. ORANGE 
+    * Single-mode - 2 connectors. uses lasers for longer distances. YELLOW 
+    * Duplex cables
+    * Connectors 
+        * ST connector - one of the earliest connectors. Round. Similar to a BNC.
+        * SC connector - square.
+        * FC connector - round but threaded.
+        * LC connector - two connectors in one. smaller footprint. 
+        * MT-RJ - smallest footprint. two connectors in one. 
+    * Polishing
+        * Physical Contact (PC) - slightly rounded 
+        * Ultra Physical Contact (UPC) - more rounded 
+        * Angled Physical Contact (APC) - angled cut 
+
+FIRE RATINGS
+
+    * Plenum-rated - space between drop ceiling and actual ceiling or gap in a raised floor. highest fire rating.
+    * Riser-rated - run between floors in a building. lower fire rating.
+    * PVC or Non-Plenum-rated - no fire protection. 
+
+LEGACY CONNECTIONS 
+
+    * Serial Ports - RS-232 protocol. DB9 or DB25 connection.
+    * Parallel Ports - IEEE 1284. DB25 connection. Typically used for printing.
+
+
+
+    
+
+    
+
+        
+
+
+
+
+
+
