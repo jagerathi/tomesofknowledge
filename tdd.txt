@@ -1,0 +1,17 @@
+==== TEST DRIVEN DEVELOPMENT (TDD) ====
+
+* You write your tests before writing the production code 
+* Also known as "Test First"
+
+*** Steps ***
+	
+	1. Write a failing test (RED)
+	2. Write the simplest code to make the test pass (GREEN)
+	3. Refactor if necesary  (REFACTOR)
+	
+*** Benefits ***
+
+	* Testable source code
+	* Full coverage tests 
+	* Simpler implementation - prevents over-engineering
+	

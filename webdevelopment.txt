@@ -1,0 +1,6 @@
+==== WEB DEVELOPMENT ====
+
+*** DEBUGGING TOOLS ***
+
+	* POSTMAN (Windows App or Chrome App)
+	* F12 in Browser (built-in debug tools)
