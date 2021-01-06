@@ -1,0 +1,9 @@
+==== JETBRAINS RIDER ====
+
+*** Getting web site or web service to run under specfic port ***
+
+    1. Go to Project -> Properties 
+    2. Web properties 
+        a. Set the URL to http://localhost 
+        b. Set the Development port to the port you want to use 
+

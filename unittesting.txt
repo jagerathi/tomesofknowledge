@@ -1,5 +1,13 @@
 ==== UNIT TESTING ====
 
+*** TESTING TOOLS ***
+
+	* Google Test (C++, xUnit framework, on github)
+	* Google Mock (C++, part of Google Test)
+	* xUnit (xunit.net, .net, open source)
+	* NUnit (.net, open source)
+	* MSTest
+
 * UNIT TEST = Tests a unit of an application without its external dependancies 
 
 	* Cheap to write 
