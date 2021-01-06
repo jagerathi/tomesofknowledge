@@ -33,12 +33,14 @@ J2EE
 Scala
 Kafka
 Entity Framework Core
+ElasticSearch
 
 *** Concepts ***
 
 Paralell processing
 Templates (C++)
 Multi-Threading
+Cloud-Native application development 
 
 *** Mobile ***
 
@@ -52,6 +54,8 @@ Google Test
 Google Mock
 JUnit
 Katalon
+xUnit
+MSTest
 
 *** Containerization ***
 
@@ -78,15 +82,25 @@ Android
 AWS DevOps 
 Azure Essentials
 Azure DevOps
+Google Cloud 
 
 *** Databases ***
 
-MondoDB
+MongoDB
 NoSQL
 MySQL
 Oracle
 PostgreSQL
+MSSQL 
 
 *** Other ***
 
 Security clearance 
+
+*** Stacks ***
+
+ELK (ElasticSearch, Kibana, LogStash, Beats)
+LAMP (Linux, Apache, MySQL, PHP)
+MEAN (MongoDB, ExpressJS, Angular, NodeJS) 
+
+
