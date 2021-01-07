@@ -20,3 +20,19 @@
 
 	# command in external file 
 	Invoke-Sqlcmd -ServerInstance $SQLServer -Database $db3 -Username $uid -Password $pwd -InputFile "c:\abc\acr_import\abc.sql" | Export-Csv "c:\abc\acr_import\acr_projects.txt" -Delimiter "," -NoTypeInformation
+
+*** event log ***
+
+	Get-EventLog -List 
+	Get-EventLog -LogName Application -Newest 50 -Source AbcHbClient -EntryType Error 
+
+*** remote execution issues ***
+
+	Check execution policy: powershell Get-ExecutionPolicy -List 
+	Set the execution policy: powershell Set-ExecutionPolicy remotesigned -Force 
+	Work around: From command prompt - powershell <PowershellCommand> <Params> (cmd powershell Get-Service)
+
+*** Creating Files and Folders ***
+
+	File (current path): New Item -Path . -Name "filename" -ItemType "file" -Value "file content"
+	Folder: New-Item -Path "c:\" -Name "FolderName" -ItemType "directory"

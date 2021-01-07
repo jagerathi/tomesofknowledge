@@ -1,0 +1,40 @@
+=== TECHICON ===
+
+<TechName>
+    Description: 
+    Use Cases: 
+    Advantages:
+    Dis-Advantages:
+
+MongoDB (mongodb.com)
+    Description: MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
+    Use Cases: dynamic schema, document based data 
+    Advantages: CRUD is atomic by default. 
+    Dis-Advantages: 16-MB document size limit. Large documents mean more overhead and will impact performance. 
+
+ElasticSearch (elastic.co)
+    Description: Elasticsearch is a distributed, open source search and analytics engine for all types of data, including textual, 
+                 numerical, geospatial, structured, and unstructured. Elasticsearch is built on Apache Lucene and was first released in 2010 by 
+                 Elasticsearch N.V. (now known as Elastic). Known for its simple REST APIs, distributed nature, speed, and scalability, Elasticsearch 
+                 is the central component of the Elastic Stack, a set of open source tools for data ingestion, enrichment, storage, analysis, and visualization. 
+                 Commonly referred to as the ELK Stack (after Elasticsearch, Logstash, and Kibana), the Elastic Stack now includes a rich collection of lightweight 
+                 shipping agents known as Beats for sending data to Elasticsearch.
+    Use Cases: 
+    Advantages:
+    Dis-Advantages:
+
+Logstash
+    Description: Logstash, one of the core products of the Elastic Stack, is used to aggregate and process data and send it to Elasticsearch. 
+                 Logstash is an open source, server-side data processing pipeline that enables you to ingest data from multiple sources simultaneously 
+                 and enrich and transform it before it is indexed into Elasticsearch.
+    Use Cases: 
+    Advantages:
+    Dis-Advantages:
+
+Kibana
+    Description: Kibana is a data visualization and management tool for Elasticsearch that provides real-time histograms, line graphs, pie charts, and maps. 
+                 Kibana also includes advanced applications such as Canvas, which allows users to create custom dynamic infographics based on their data, 
+                 and Elastic Maps for visualizing geospatial data.
+    Use Cases: 
+    Advantages:
+    Dis-Advantages:
