@@ -34,6 +34,8 @@ Scala
 Kafka
 Entity Framework Core
 ElasticSearch
+Spring (spring.io)
+Spring.net (springframework.net)
 
 *** Concepts ***
 
