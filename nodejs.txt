@@ -1,5 +1,7 @@
 === NODE.JS ===
 
+https://nodejs.org/en/
+
 Node Version Manager (windows)
 
 nodist (https://github.com/nulllivex/nodist)
@@ -24,3 +26,16 @@ nodist -4.1.1 (removes a version)
 
 nodist --help 
 
+*** Setting up a new project ****
+
+    1. Create the root folder 
+    2. Naviage to the root folder 
+    3. run npm init 
+    4. install modules (i.e. npm install express request --save)
+    
+
+
+
+**** References *****
+
+https://nodesource.com/blog/microservices-in-nodejs
