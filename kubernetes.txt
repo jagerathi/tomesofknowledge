@@ -4,3 +4,37 @@ kubernetes.io
 
 Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
 
+*** MINIKUBE ***
+https://minikube.sigs.k8s.io/docs/start/
+
+* INSTALL
+    ** Windows Package Manger - winget install minikube 
+    ** Chocolatey - choco install minikube 
+
+* START 
+    ** (Elevated Prompt): minikube start 
+
+* INTERACT
+    ** (Elevated Prompt): kubectl get po -A 
+    ** (Elevated Prompt): minikube dashboard 
+
+* DEPLOY APPLICATIONS 
+    ** (Elevated Prompt): kubectl create deployment hello-minikube --image=k8.gcr.io/echoserver:1.4
+    ** (Elevated Prompt): kubectl expose deployment hello-minikube --type=NodePort --port=8080
+    ** (Elevated Prompt): kubectl get services hello-minikube 
+    ** (Elevated Prompt): minikube service hello-minikube 
+    ** (Elevated Prompt): kubectl port-forward service/hello-minikube 7080:8080
+
+* LOAD BALANCE DEPLOYMENTS 
+    ** (Elevated Prompt): kubectl create deployment balanced --image=k8.gcr.io/echoserver:1.4
+    ** (Elevated Prompt): kubectl expose deployment balanced --type=LoadBalancer --port=8080
+    ** (Elevated Prompt): minikube tunnel 
+    ** (Elevated Prompt): kubectl get services balanced 
+
+* MANAGE CLUSTER
+    ** (Elevated Prompt): minkube pause 
+    ** (Elevated Prompt): minikube stop
+    ** (Elevated Prompt): minikube config set memory 16384
+    ** (Elevated Prompt): minikube addons list 
+    ** (Elevated Prompt): minikube start -p aged --kubernetes-version=v.1.16.1
+    ** (Elevated Prompt): minikube deleted --all 

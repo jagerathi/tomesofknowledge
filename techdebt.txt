@@ -18,6 +18,8 @@ Jenkins
 Octopus
 Jira 
 Confluence
+Terraform
+
 
 *** Frameworks ***
 
@@ -25,6 +27,7 @@ Angular
 Spring
 Django
 Hibernate
+NHibernate
 NodeJS
 Ruby on Rails 
 ReactJS
@@ -36,6 +39,7 @@ Entity Framework Core
 ElasticSearch
 Spring (spring.io)
 Spring.net (springframework.net)
+RabbitMQ
 
 *** Concepts ***
 
@@ -43,6 +47,7 @@ Paralell processing
 Templates (C++)
 Multi-Threading
 Cloud-Native application development 
+Blockchain
 
 *** Mobile ***
 
@@ -58,6 +63,8 @@ JUnit
 Katalon
 xUnit
 MSTest
+NUnit 
+NMock
 
 *** Containerization ***
 

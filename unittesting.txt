@@ -55,6 +55,29 @@
 	* Test class is decorated with [TestFixture]
 	* Test method is decorated with [Test]
 	* Asset.That()
+	* Setup is decorated with [SetUp]
+	* Teardown is decorated with [TearDown]
+	* Use [TestCase] to create multiple test cases for a paramaterized test method 
+	* Use [Ignore(<reason>)] to skip a test 
+	* Assertions
+		* Is.EqualTo
+		* Is.Not.EqualTo
+		* Is.Null
+		* Is.Not.Null 
+		* Does.StartWith
+		* Does.Contain
+		* Does.EndsWith
+		* IgnoreCase can be chained for strings 
+		* Is.EquivalentTo 
+		* Is.Ordered 
+		* Is.Unique 
+		* Is.Not.Empty 
+		* Is.TypeOf<type>
+		* Is.InstanceOf<type>
+		* For exceptions: 
+			* Assert.That(() => logger.Log(error), Throws.ArgumentNullException)
+			* Assert.That(() => logger.Log(error), Throws.Exception.TypeOf<type>)
+
 	
 *** Conventions ***
 
@@ -63,7 +86,8 @@
 	* Test setup - Triple A
 		** Arrange
 		** Act
-		** Asset 
+		** Assert 
+	* Test Method Name: [MethodName]_[Scenario]_[ExpectedBehavior]
 		
 
 *** Characteristics of a good unit test ***
@@ -81,3 +105,14 @@
 	* Command - runs a command 
 	* 
 
+*** Trustworthy Tests ***
+
+	* When i passed, you know your code is good. when it fails, know your code has problem.
+	* Works well with TDD 
+	* When you test the wrong thing, your test is untrustworthy
+	* Verify that your tests are testing the correct thing 
+
+*** Core Unit Testing Techniques ****
+
+	* Testing Strings 
+		* balance between too general and too specific 
