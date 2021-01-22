@@ -34,5 +34,5 @@
 
 *** Creating Files and Folders ***
 
-	File (current path): New Item -Path . -Name "filename" -ItemType "file" -Value "file content"
+	File (current path): New-Item -Path . -Name "filename" -ItemType "file" -Value "file content"
 	Folder: New-Item -Path "c:\" -Name "FolderName" -ItemType "directory"

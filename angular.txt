@@ -8,10 +8,6 @@ ng generate component <name>
 
 ng generate service <name>
 
-
-
-
-
 *** Angular Base App Walk Through ***
 
 1. Navigate to root folder
