@@ -1,4 +1,12 @@
-=== CHEAT SHEET ===
+=== DOCKER ===
+
+Containers are a way to package software in a format that can run isolated on a shared operating system.
+Unlike VMs, containers do not bundle a full operating system - only librairies and settings requeisted to make 
+the software work are needed.
+This makes for efficient, lightweight, self-contained systems that guarentees that software will always 
+run the same, regardless of where it is deployed.
+
+*** COMMANDS ****
 
 cp - copy files and folders between container and local storage
 
@@ -11,3 +19,11 @@ ps - list containers
 docker ps -a // see terminated images 
 
 docker logs <instance name>
+
+docker run -d -p 3000:80 tutum/hello-world (-d = detached, -p is port forarding, tutum/hello-world is the image name)
+docker run --name=<container name> --restart on-failure -d <imagename:tag>
+
+*** IMAGES ***
+
+docker pull store/oracle/mysql-enterprise-server:tag
+docker run --name=mysql1 --restart on-failure -d store/oracle/mysql-enterprise-server:8.0

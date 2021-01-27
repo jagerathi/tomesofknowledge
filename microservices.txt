@@ -12,3 +12,9 @@ The microservice architecture enables the rapid, frequent and reliable delivery 
 It also enables an organization to evolve its technology stack.
 
 
+
+
+
+*** REFERENCES ***
+
+https://www.3pillarglobal.com/insights/blog-posts/develop-microservices-net-core-docker/

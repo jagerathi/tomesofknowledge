@@ -17,6 +17,9 @@ https://minikube.sigs.k8s.io/docs/start/
 * INTERACT
     ** (Elevated Prompt): kubectl get po -A 
     ** (Elevated Prompt): minikube dashboard 
+    ** (Elevated Prompt): kubectl get pods 
+    ** (Elevated Prompt): kubectl get deployments 
+
 
 * DEPLOY APPLICATIONS 
     ** (Elevated Prompt): kubectl create deployment hello-minikube --image=k8.gcr.io/echoserver:1.4
