@@ -35,7 +35,7 @@ https://minikube.sigs.k8s.io/docs/start/
     ** (Elevated Prompt): kubectl get services balanced 
 
 * MANAGE CLUSTER
-    ** (Elevated Prompt): minkube pause 
+    ** (Elevated Prompt): minikube pause 
     ** (Elevated Prompt): minikube stop
     ** (Elevated Prompt): minikube config set memory 16384
     ** (Elevated Prompt): minikube addons list 

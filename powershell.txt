@@ -25,6 +25,10 @@
 
 	Get-EventLog -List 
 	Get-EventLog -LogName Application -Newest 50 -Source AbcHbClient -EntryType Error 
+	Get-EventLog -LogName Application -Index 17871 | Select-Object -Property *
+	Get-EventLog -LogName Application -Newest 1000 | Group-Object -Property Source -NoElement | Sort-Object -Property Count -Descending
+	Get-EventLog -LogName System -Message *description*
+	
 
 *** remote execution issues ***
 
