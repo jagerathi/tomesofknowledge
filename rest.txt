@@ -1,0 +1,34 @@
+=== REST ===
+
+https://restfulapi.net/
+
+REST is acronym for REpresentational State Transfer. It is architectural style for distributed hypermedia 
+systems and was first presented by Roy Fielding in 2000 in his famous dissertation.
+
+Like any other architectural style, REST also does have it’s own 6 guiding constraints which must 
+be satisfied if an interface needs to be referred as RESTful. These principles are listed below.
+
+*** 6 Guiding Principles ***
+
+    1. Client-Server
+    2. Stateless
+    3. Cacheable
+    4. Uniform interface
+    5. Layered systems
+    6. Code on demand (optional)
+
+The key abstraction of information in REST is a resource
+
+In simplest words, in the REST architectural style, data and functionality are considered resources 
+and are accessed using Uniform Resource Identifiers (URIs). The resources are acted upon by using a set of simple, 
+well-defined operations. The clients and servers exchange representations of resources by using a 
+standardized interface and protocol – typically HTTP.
+
+
+
+
+
+==== References ====
+
+http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven
+http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
