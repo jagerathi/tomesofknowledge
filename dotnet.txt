@@ -1,0 +1,52 @@
+=== .NET ===
+
+https://docs.microsoft.com/en-us/dotnet/core/tools/
+
+.Net Command Line commands
+
+*** Create a new project ***
+
+    * dotnet new classlib -n Math 
+    * dotnet new xunit -n MathTests
+    * new templates
+        * console 
+        * classlib
+        * winforms 
+        * worker 
+        * mstest 
+        * nunit 
+        * xunit 
+        * web (asp.net core empty)
+        * mvc (asp.net core web app)
+        * angular 
+        * react 
+        * webapi 
+        * gitignore 
+        * globaljson
+        * webconfig 
+        * sln 
+
+*** Solutions ***
+
+    * dotnet new sln -n <filename> 
+    * dotnet sln add <projectname>
+    * dotnet sln remove <projectname>
+    * dotnet sln list (get the projects in the solution)
+
+*** Project stuff **
+
+    * dotnet add reference 
+    * dotnet list reference 
+    * dotnet remove reference 
+
+*** Build it ***
+
+    * dotnet build 
+
+*** Run it ***
+
+    * dotnet run 
+
+*** Test it ***
+
+    * dotnet test 

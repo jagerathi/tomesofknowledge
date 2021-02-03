@@ -9,6 +9,8 @@ Four Pillars
 	
 Solution to procedural programming and spaghetti code
 
+Seperate what changes from what does not change 
+
 Encapulation
 
 "The best functions are those with no parameters." - Robert Martin (Uncle Bob)

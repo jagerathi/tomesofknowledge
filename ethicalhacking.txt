@@ -8,3 +8,23 @@
 
     * virtualbox.org
 
+*** NMAP ***
+
+    * Linux tool 
+    * INSTALL: apt install nmap -y 
+    * nmap -sT <ipaddress> 
+    * nmap --script vuln <ipaddress> 
+    * nmap -sT -p <port#> <ipaddress>
+
+*** VPN ***
+
+*** SOHO hardening ***
+
+    * ensure the firewall is enabled 
+    * turn off port forwarding 
+    * disable remote management
+    * change the SSID 
+    * complex password
+    * utilize guest networks 
+    * disable ping checks  
+

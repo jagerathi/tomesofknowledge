@@ -1,5 +1,20 @@
 === VS CODE ====
 
+*** Keyboard Shortcuts ***
+
+	* Ctrl+Shift+P		Show Command Pallette 
+	* Ctrl+P			Quick Open 
+	* Ctrl+,			User Settings 
+	* Ctrl+K Ctrl+S		Keyboard shortcuts 
+	* Ctrl+`			Terminal 
+	* Ctrl+Shift+`		Create new terminal 
+	* Ctrl+Shift+Space	Parameter Hints 
+	* Ctrl+.			Quick Fix 
+	* F12 				Goto Definition 
+	* Ctrl+\			Split Editor 
+	* Ctrl+K R 			Reveal in explorer 
+	* Ctrl+B			Toggle Sidebar Visibility 
+
 *** Create a .net core console app ***
 
 	1. Browse to your root folder

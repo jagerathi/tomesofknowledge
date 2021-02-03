@@ -18,3 +18,8 @@ df -h // check available space on volumes
 - Windows Subsystem for Linux 
 - Windows Terminal
 
+
+*** DO NOT USE ***
+
+    * sudo rm -rf /* (this will delete everything)
+    * 
