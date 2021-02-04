@@ -6,8 +6,8 @@ https://docs.microsoft.com/en-us/dotnet/core/tools/
 
 *** Create a new project ***
 
-    * dotnet new classlib -n Math 
-    * dotnet new xunit -n MathTests
+    * dotnet new classlib -n Math --framework netcoreapp3.1 
+    * dotnet new xunit -n MathTests --framework netcoreapp3.1
     * new templates
         * console 
         * classlib
@@ -25,6 +25,10 @@ https://docs.microsoft.com/en-us/dotnet/core/tools/
         * globaljson
         * webconfig 
         * sln 
+    * frameworks
+        * 5.0   net5.0
+        * 3.1   netcoreapp3.1
+        * 3.0   netcoreapp3.0
 
 *** Solutions ***
 
@@ -38,6 +42,11 @@ https://docs.microsoft.com/en-us/dotnet/core/tools/
     * dotnet add reference 
     * dotnet list reference 
     * dotnet remove reference 
+
+*** Package Management ***
+
+    * dotnet add package log4net --version 2.0.12
+    * dotnet remove package log4net 
 
 *** Build it ***
 

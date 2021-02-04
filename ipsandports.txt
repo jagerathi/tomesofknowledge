@@ -1,0 +1,10 @@
+=== IPs and Ports ===
+
+*** See if a port is in use ***
+
+    netstat -ano | findstr 3001 
+
+*** Get a list of reserved ports ***
+
+    netsh interface ipv4 show excludedportrange protocol=tcp 
+
