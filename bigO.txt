@@ -18,9 +18,17 @@ O(n^2) - quadratic time.
 O(2 ^ n) - exponential time.
 
 
+*** Time Complexity ****
 
+    If we have a tree representation, we neeed to count the levels 
 
+    
 
+*** Space Complexity ***
+
+    We need to look at the stack space for recursive calls 
+
+    Factor in any significant storage or caching used 
 
 
 
