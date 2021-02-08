@@ -1,0 +1,96 @@
+=== ALLCONSTRUCT ===
+
+Write a function allConstruct(target, wordBank) that accepts a target string 
+and an array of strings.
+
+The fuction should return a 2D array containing all the ways 
+that the target can be constructed by concatenating elements of 
+the wordBank array. Each element in the 2D array shoul represent one 
+combintation that constructs the target.
+
+You may reuse elements of wordBank as many times as needed.
+
+Test Case:
+
+    allConstruct( 'purple', [ 'purp', 'p', 'ur', 'ple', 'purpl' ]);
+
+    [
+        [ 'purp', 'le' ],
+        [ 'p', 'ur', 'p', 'le' ]
+    ]
+
+    allConstruct( 'abcdef', [ 'ab', 'abc', 'cd', 'def', 'abcd', 'ef', 'c' ]);
+
+    [
+        [ 'ab', 'cd', 'ef' ],
+        [ 'ab', 'c', 'def' ],
+        [ 'abc', 'def' ],
+        [ 'abcd', 'ef' ]
+    ]
+
+    allConstruct( 'hello', [ 'cat', 'dog', 'mouse' ]);
+
+    []
+
+    allConstruct( '', [ 'cat', 'dog', 'mouse' ]);
+
+    [[]]
+
+*** Recursive Solution
+
+const allConstruct = ( target, wordBank ) => {
+
+    if(target === '') return [[]];
+
+    const result = [];
+
+    for(let word of wordBank) {
+        if(target.indexOf(word) === 0) {
+            const suffix = target.slice(word.length);
+            const suffixWays = allConstruct(suffix, wordBank);
+            const targetWays = suffixWays.map(way => [ word, ...way ]);
+            result.push(...targetWays);
+        }
+    }
+    return result;
+};
+
+console.log(allConstruct('purple', [ 'purp', 'p', 'ur', 'le', 'purpl' ])); // 2
+console.log(allConstruct('abcdef', [ 'ab', 'abc', 'cd', 'def', 'abcd', 'ef', 'c'])); // 4
+console.log(allConstruct('skateboard', [ 'bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])); // 0
+console.log(allConstruct('enterapotentpot', [ 'a', 'p', 'ent', 'enter', 'ot', 'o', 't'])); // 4
+console.log(allConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [ 'e', 'ee', 'eee', 'eeee', 'eeeee'])); // 0
+
+Time Complexity: O(n^m)
+Space Complexity: O(m)
+
+*** Dynamic Solution using Memoization ***
+
+const allConstruct = ( target, wordBank, memo = {} ) => {
+
+    if(target in memo) return memo[target];
+    if(target === '') return [[]];
+
+    const result = [];
+
+    for(let word of wordBank) {
+        if(target.indexOf(word) === 0) {
+            const suffix = target.slice(word.length);
+            const suffixWays = allConstruct(suffix, wordBank, memo);
+            const targetWays = suffixWays.map(way => [ word, ...way ]);
+            result.push(...targetWays);
+        }
+    }
+
+    memo[target] = result;
+    return result;
+};
+
+console.log(allConstruct('purple', [ 'purp', 'p', 'ur', 'le', 'purpl' ])); // 2
+console.log(allConstruct('abcdef', [ 'ab', 'abc', 'cd', 'def', 'abcd', 'ef', 'c'])); // 4
+console.log(allConstruct('skateboard', [ 'bo', 'rd', 'ate', 't', 'ska', 'sk', 'boar'])); // 0
+console.log(allConstruct('enterapotentpot', [ 'a', 'p', 'ent', 'enter', 'ot', 'o', 't'])); // 4
+console.log(allConstruct('eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef', [ 'e', 'ee', 'eee', 'eeee', 'eeeee'])); // 0
+
+Time Complexity: O(n^m)
+Space Complexity: O(m)
