@@ -70,3 +70,36 @@ n = array length
 Time Complexity: O(n * m)
 Space Complexity: O(m) 
 
+*** Dynamic Solution using Tabulation ***
+
+targetSum: 7
+numbers: [ 5, 3, 4 ]
+
+Table Size: targetSum + 1
+
+Fill: False 
+Seed: Index 0 as True (0 can always be found using none of the numbers)
+
+const canSum = (targetSum, numbers) => {
+
+    const table = Array(targetSum + 1).fill(false);
+    table[0] = true;
+
+    for(let i = 0; i <= table.length; ++i) {
+        if(table[i] === true) {
+            for(let num of numbers) {
+                table[i + num] = true;
+            }
+        }
+    }
+    return table[targetSum];
+};
+
+console.log(canSum(7, [ 2, 3 ]));   // true 
+console.log(canSum(7, [ 5, 3, 4 ])); // true 
+console.log(canSum(7, [ 2, 4 ])); // false
+console.log(canSum(8, [ 2, 3, 5 ])); // true 
+console.log(canSum(300, [ 7, 14 ])); // false 
+
+Time Complexity:    O(m * n)
+Space Complexity:   O(m)

@@ -58,4 +58,39 @@ Time complexity: O(n * m^2 )
 Space Complexity: O(m^2)
 
 
+*** Dynamic Solution using Tabulation ***
+
+howSum( 7, [ 5, 3, 4 ]) -> [ 3, 4 ] or [ 4, 3 ]
+
+Table Size: targetSum + 1
+
+Initialize: null 
+Seed: Index 0 = []
+
+const howSum = (targetSum, numbers) => {
+
+    const table = Array(targetSum + 1).fill(null);
+    table[0] = [];
+
+    for(let i = 0; i <= targetSum; ++i) {
+        if(table[i] != null) {
+            for(let num of numbers) {
+                table[i + num] = [ ...table[i], num ];
+            }
+        }
+    }
+
+    return table[targetSum];
+
+};
+
+console.log(canSum(7, [ 2, 3 ]));   // true 
+console.log(canSum(7, [ 5, 3, 4 ])); // true 
+console.log(canSum(7, [ 2, 4 ])); // false
+console.log(canSum(8, [ 2, 3, 5 ])); // true 
+console.log(canSum(300, [ 7, 14 ])); // false 
+
+
+Time Complexity:    O(m^2 * n)
+Space Complexity:   O(m^2)
 
