@@ -1,0 +1,11 @@
+=== GIT: New Local Project Setup and Adding to Remote Repository ===
+
+1. Create the new repository on GitHub. Do not initialize with any files.
+2. In terminal or git bach, navigate to the root folder of the new project.
+3. Run: git init -b main 
+4. Run: git add .
+5. Run: git commit -m "First Commit"
+6. From GitHub, get the URL for the new repository 
+7. Run: git remote add origin <remote_url> 
+8. Run: git remote -v 
+9. Run: git push origin main 

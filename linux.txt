@@ -22,4 +22,22 @@ df -h // check available space on volumes
 *** DO NOT USE ***
 
     * sudo rm -rf /* (this will delete everything)
+    *
+
+*** Top Commands ***
+
+    * killall <name> 
+    * touch 
+        * touch file1.txt // creates a file 
+        * touch file2.txt file3.txt  // creates multiple file 
+        * touch <filename> // for an existing file, will change the last modified date on the file 
+        * sudo touch /forcefsck // will run a file check on next reboot 
+    * which <programname> - tells you the location of the installation 
+    * ping <url> -c 3
     * 
+
+
+
+References:
+
+    https://www.top-password.com/blog/reset-lost-root-password-in-windows-subsystem-for-linux/
