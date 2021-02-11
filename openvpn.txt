@@ -1,0 +1,22 @@
+=== OPENVPN ===
+
+Free VPN on AWS
+
+1. Go to EC2 
+2. Launch Instance 
+3. MarketPlace -> OpenVPN  (Free Tier Eligable)
+4. Select general purpose free tier instance 
+5. Launch
+6. Set or Create the key pair - if create, download and safe the file 
+7. Once the instance launches, right-click then connect, go to ssh tab and grab the ssh path 
+8. open Terminal and ssh to server 
+9. Accept the agreement and all the defaults 
+10. ssh again using the openvpnas user instead of root 
+11. run: sudo passwd openvpn and set the password for openvpn user 
+12. Goto AWS and get the public IP for the OpenVPN server 
+13. Open browser and goto https//<ip address>:943/admin/ (accept the SSL warning due to self-signed certificate)
+14. Login with openvpn user and password set in step 11
+15. Go to Configuration -> VPN Settings -> Should client internet traffic be routed through the VPN? and change to YES 
+16. Save Settings at the bottom
+17. Apply settings to running server at top 
+18. Go to https://<ip address>:943/ - login with openvpn user - download the vpn client needed.

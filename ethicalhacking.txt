@@ -28,3 +28,8 @@
     * utilize guest networks 
     * disable ping checks  
 
+*** Commands ***
+
+    * netsh wlan show profiles 
+    * netsh wlan show profiles <profile name>
+    * netsh wlan show profiles <profile name> key=clear 

@@ -1,0 +1,70 @@
+=== GRAPH THEORY ===
+
+Graph Theory is the mathematical theory of the properties and applications 
+of graphs (networks). 
+
+*** Types of Graphs ***
+
+    * Undirected Graph - edges have no orientation (u,v) = (v,u) 
+    * Directed Graph (digraph) - edges are directional (u,v) != (v,u)
+    * Weighted Graphs - edges have weighted values (u,v,w)
+    * Trees - undirected graph with no cycles 
+    * Rooted Tree - has a root node. all nodes go in or out of root (in-tree or out-tree)
+    * Directed Acyclic Graphs (DADS) - directed graph with no cycles 
+    * Bipartite Graph - vertices can be split into two independent groups U and V 
+    * Complete Graph - A unique edge between every pair of nodes (worst case)
+
+*** Representations ***
+
+    * Adjacency matrix (2D)
+        PROS                                        CONS 
+        Space efficient                             Requires O(v^2) space  
+        Edge weight lookup is O(1)                  Iterating over all edges takes O(v^2) time 
+        Simplest graph representation 
+
+    * Adjancency List 
+        A => [ (B,2), (C,4), (D,-2)]
+        B => [ (A,2), (C,3), (D,1) ]
+        PROS                                        CONS
+        Space efficient for sparse graphs           Less space effiect for denser graphs 
+        Iterating over all edges is efficient       Edge weight lookup is O(E) 
+                                                    Slightly more complex graph representation 
+
+    * Edge List (unordered list of edges - (U,V,W))
+        [(C,A,4), (A,C,1),
+         (B,C,6), (A,B,4),
+         (C,B,1), (C,D,2) ]
+
+        PROS                                        CONS
+        Space efficient for sparse graphs           Less space efficient for denser graphs 
+        Iterating over all edges is efficient       Edge weight lookup is O(E)
+        Very simple structure 
+
+*** Common Graph Theory Problems ***
+
+    Questions:
+        Is the graph directed or undirected?
+        Are the edges of the graph weighted?
+        Is the graph I will encounter likely to be sparse or dense with edges?
+        Should I use an adjancency matrix, adjancency list, edge list, or other structure to represent efficiently?
+
+    ** Shortest Path Problem **
+
+    Algorithms:
+        BFS 
+        Dijkstra's 
+        Bellman-Ford 
+        Floyd-Warshall
+        A*
+        DFS 
+
+    Is our graph dis-connected?
+    Do we have negative cycles?
+    Strongly connected components 
+    
+
+    
+
+
+        
+
