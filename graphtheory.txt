@@ -62,9 +62,74 @@ of graphs (networks).
     Do we have negative cycles?
     Strongly connected components 
     
+*** Depth First Search (DFS) ***
 
+    The DFS is the most fundamental search algorithm used to explore nodes and edges of a graph.
+    It runs with a time complexity of O(V+E) and is often used as a building block in other algorithms.
+
+    The DFS is not all that useful, but when augmented to perform other tasks such as 
+    counting connected components, determine connectivity, or finding bridges/articulation points then
+    it really shines.
+
+    --- Pseudocode ---
+
+    n = number of nodes 
+    g = adjacency list of graph 
+    visited = [n] // initialize to false 
+
+    function dfs(at) : 
+        if visited[at]: return;
+        visited[at] = true;
+
+        neighbors = graph[at]
+        for next in neighbors:
+            dfs(next)
+
+    start_node = 0
+    dfs(start_node)
     
+    --- Finding components ---
 
+    n = number of nodes 
+    g = adjacency list of graph 
+    count = 0
+    components = []
+    visited = [n] // initialize to false 
+
+    function findComponents():
+        for(i = 0; i < n; i++):
+            if !visited[i]:
+                count++
+                dfs(i)
+            return (count, components)
+
+    function dfs(at):
+        visited[at] = true 
+        components[at] = count
+
+        for(next : g[at]):
+            if !visited[next]:
+                dfs(next)
 
         
+    --- What else can DFS do? ---
 
+    1. Compute minimum spanning tree 
+    2. Detech and find cycles in a graph
+    3. Check if a graph is bipartite 
+    4. Find strongly connnected components 
+    5. Topologically sort the nodes of a graph 
+    6. Find bridges and articulation points 
+    7. Finding augmenting paths in a flow network 
+    8. Generate mazes 
+
+*** Breadth First Search (BFS) ***
+
+    The BFS is another fundamental search algorithm used to explore nodes and edges 
+    of a graph. It runs with a time complexity of O(V+E) and it often used 
+    as a building block in other algorithms. 
+
+    The BFS algorithm is particularly useful for one thing: finding the shortest path on
+    unweighted graphs. 
+
+    

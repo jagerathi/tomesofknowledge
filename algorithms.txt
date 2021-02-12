@@ -40,4 +40,17 @@ Output: same numbers, sorted in increasing order
 		12345678
 		
 
-		
+*** Top 10 to know ***
+
+	Make sure you understand the fundamental techniques for these 
+
+	1. Depth First Search (DFS)
+	2. Breadth First Search (BFS)
+	3. Matching Parenthesis 
+	4. Hash Tables 
+	5. Variable/Pointer manipulation 
+	6. Reversing a linked list 
+	7. Sorting (QuickSort, MergeSort, HeapSort) - understand how they work 
+	8. Recursion 
+	9. Custom data structures / Object Oriented Programming (gumball question??)
+	10. Binary Search 
