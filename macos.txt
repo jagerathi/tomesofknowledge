@@ -1,0 +1,31 @@
+=== MAC OS ===
+
+*** Commands ***
+
+    CMD + T - New Tab 
+    CMD + C - Copy 
+    CMD + V - Paste 
+    CMD + OPTION + V - Move 
+    CMD + SPACE - Spotlight (Search)
+    CMD + Tab - App Switcher 
+    CMD + SHIFT + 3 - Capture whole screen 
+    CMD + SPACE (hold) - Siri 
+    
+
+*** Gestures ***
+
+    Swipe between pages - Two Fingers and scroll left or right 
+    Swipe between full-screen apps - Three Fingers and scroll left or right 
+    Notifcation Center - swipe left from right edge two fingers 
+    Mission Control - Swipe up with three fingers 
+    App Expose - Swipe down with three fingers 
+    Launchpad - Pinch with thumb and three fingers 
+    Show Desktop - Spread with thumb and three fingers 
+
+
+
+
+*** REFERENCES ***
+
+    https://www.muo.com/tag/macos-beginners-guide/
+    
