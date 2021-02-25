@@ -22,6 +22,14 @@
     Launchpad - Pinch with thumb and three fingers 
     Show Desktop - Spread with thumb and three fingers 
 
+*** Productivity Tools ***
+
+    Vim (code editor)
+    IntelliJ (ide)
+    Notion (note taking / to do list)
+    Screen (real-time collaboration / screen sharing / remote control)
+    Flux (controls screen intensity)
+    Magnet (snap tool for apps)
 
 
 

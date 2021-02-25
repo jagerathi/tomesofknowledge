@@ -23,6 +23,10 @@ docker logs <instance name>
 docker run -d -p 3000:80 tutum/hello-world (-d = detached, -p is port forarding, tutum/hello-world is the image name)
 docker run --name=<container name> --restart on-failure -d <imagename:tag>
 
+*** Getting the enviromental variables for a container ***
+
+docker inspect <container name>
+
 *** IMAGES ***
 
 docker pull store/oracle/mysql-enterprise-server:tag

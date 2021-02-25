@@ -41,8 +41,26 @@
 	File (current path): New-Item -Path . -Name "filename" -ItemType "file" -Value "file content"
 	Folder: New-Item -Path "c:\" -Name "FolderName" -ItemType "directory"
 
+*** Deleting Files and Folders ***
+
+	File (current path): Remove-Item -Path file.txt -Verbose 
+	File: Remove-Item -Path c:\temp\file.txt -Verbose 
+	Folder: Remove-Item -Path c:\temp\old -Recurse -Verbose 
+	File (hidden): Remove-Item -Path shady.file -Verbose -Force 
+
 *** IIS ***
 
 	Get-IISAppPool
 	Restart-WebAppPool <AppPoolName>
 
+*** Windows Services ***
+
+	Get-Service 
+	Get-Service | where { $_.DisplayName -like 'Octo*'}
+
+	Start-Service <name>
+	Stop-Service <name>
+
+*** Disks and Volumes ***
+
+	Get-Volume 

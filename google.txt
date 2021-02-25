@@ -1,0 +1,12 @@
+=== GOOGLE ===
+
+*** Refining a web search ***
+
+    Search for a specific site: site:nytimes.com (no spaces)
+    Search for a related site: related:time.com 
+    Search for a price: camera $400
+    Search hashtages: #knollitall 
+    Exclude words: jaguar speed -car 
+    Exact match: "tallest building"
+    Range of numbers: camera $50..$100 
+    Combine searches: marathon or race 
