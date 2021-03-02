@@ -1,0 +1,46 @@
+=== .Net Core - Deploy to IIS with Powershell ===
+
+*** Make sure IIS is installed ***
+
+    Get-WindowsFeature Web-Server
+
+    Install-WindowsFeature Web-Server 
+
+*** Install ASP.NET Core Hosting  ***
+
+    Run "install-netcorehosting.ps1" to download the 2 packages 
+
+    Run "dotnet-hosting-3.1.0-win.exe"
+
+    Run "WebDeploy_amd64_en-US.msi"
+
+*** Create a new Web Site 
+
+    Create the root folder and then make that the current folder 
+
+    New-WebSite -Name <SiteName> -Port <SitePort> -PhysicalPath <folder name>
+
+    Add a dummy file for tesint: New-Item -Path . -Name "default.html" -ItemType "file" -Value "<h1>Test Document</h1>"
+
+    Test the site: curl http://localhost:<SitePort>/default.html 
+
+*** Create the app pool ***
+
+    New-WebAppPool -Name <AppPoolName>
+
+    (Optional) Set the App Pool Identity
+    Import-Module WebAdministration
+    Set-ItemProperty IIS:\AppPools\<PoolName> -name processModel -value @{userName="<username>";password="<password>";identitytype=3;}
+
+    Assign App Pool to Web Site 
+
+    Set-ItemProperty 'IIS:\Sites\<WebSiteName>' applicationPool <PoolName>
+
+*** Publish the .net core site ***
+
+    dotnet publish -r win-x64 
+
+
+
+
+
