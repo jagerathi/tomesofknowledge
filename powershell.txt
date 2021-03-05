@@ -64,3 +64,10 @@
 *** Disks and Volumes ***
 
 	Get-Volume 
+
+*** Create a drive mapping ***
+
+	$cred = Get-Credential -Credential abc\adm-kknoll
+	New-PSDrive -Name "Z" -Root "\\172.20.3.7\storage" -Persist -PSProvider -Credential $cred 
+
+	
