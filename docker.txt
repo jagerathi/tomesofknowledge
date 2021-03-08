@@ -31,3 +31,5 @@ docker inspect <container name>
 
 docker pull store/oracle/mysql-enterprise-server:tag
 docker run --name=mysql1 --restart on-failure -d store/oracle/mysql-enterprise-server:8.0
+docker images prune 
+

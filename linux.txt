@@ -36,6 +36,19 @@ df -h // check available space on volumes
     * ping <url> -c 3
     * 
 
+*** Viewing files ***
+
+    cat <filename>
+    nl <filename>
+    less <filename> (pages the output)
+    head <filename> (first 10 lines)
+    tail <filename> (last 10 lines)
+    strings <filename> (displays readable text in a binary file)
+
+*** Install less ***
+
+    1. sudo apt-get update -y
+    2. sudo apt-get install -y less 
 
 
 References:
