@@ -49,3 +49,8 @@ Windows key + W: open the Windows Ink Workspace for scribbling on tablets or tou
 Windows key + Print Screen: Take a screenshot of the entire desktop and save it to the Screenshots folder in the Pictures folder.
 Windows key + (+) or (-): Zoom in and out with magnifier.
 Windows key + Esc: Exit magnifier.
+
+*** Dialog and File Expolorer ***
+
+F11 - Toggle fullscreen
+ 
