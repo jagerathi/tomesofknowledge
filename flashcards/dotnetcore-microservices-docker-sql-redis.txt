@@ -1,0 +1,76 @@
+=== .NET CORE Microservices using Docker, SQL, Redis, and RabbitMQ ===
+
+Using VSCode and .Net CLI 
+
+The demo web app we'll build in this post is powered by 3 ASP.NET Core microservices, RabbitMQ, 
+Redis and Sql Server on Linux all running in docker containers.
+
+*** Setting up the solution ***
+
+    1. Create the root folder
+    2. Create the solution file: dotnet new sln --name dotnetgigs
+    3. Create a directory called services 
+    4. Create a folder for each microservice under services:
+        a. services\applicants.api 
+        b. services\identity.api
+        c. jobs.api 
+    5. In each folder created, create the webapi project: dotnet new webapi (no name needed as it will use the folder name)
+    6. Add each microservice project to the solution 
+        a. dotnet sln add services/applicants.api/applicants.api.csproj
+        b. dotnet sln add services/identity.api/identity.api.csproj 
+        c. dotnet sln add services/jobs.api/jobs.api.csproj
+    
+*** Setting up docker ***
+
+    1. CTRL+SHIFT+P - Docker: Add Docker Files to Workspacce 
+        a. select applicants.api 
+        b. set port 
+        c. yes to add docker compose 
+    2. CTRL+SHIFT+P - Docker: Add Docker Files to Workspacce 
+        a. select identity.api 
+        b. set port 
+        c. no to add docker compose
+        d. no to overwrite 
+        e. open docker.compose, copy applications.api service and change to match identity.api setup 
+    3. Repeat step 2 for jobs.api 
+    4. Add SQL data container to docker.compose 
+        sql.data
+            image: mssql-linux 
+            build:
+                context: ./Database 
+                dockerfile: Dockerfile 
+            ports: 
+                - "5433:1433"
+            container_name: mssql-linux 
+    5. Add container dependancy for jobs.api
+        jobs.api:
+            ...
+            depends_on: 
+                - sql.data
+    6. Add Redis container to docker.compose 
+        user.data:
+            image: redis
+    7. Add environment entry in identity.api for Redis 
+        identity.api:
+            image: identity.api 
+            environment: 
+                - RedisHost=user.data:6379
+    8. Add rabbitMQ container to docker.compose 
+        rabbitmq:
+            image: rabbitms:3-management
+            ports: 
+                - "15672:15672"
+            container_name: rabbitmq 
+    
+
+
+
+
+
+
+
+
+
+*** REFERENCES ***
+
+https://fullstackmark.com/post/12/get-started-building-microservices-with-asp.net-core-and-docker-in-visual-studio-code

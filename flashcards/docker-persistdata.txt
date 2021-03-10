@@ -1,0 +1,21 @@
+=== Docker - Persist Data ===
+
+*** Host volume mapping ***
+
+    -v <host directory>:/var/opt/mssql/data
+
+    <host director> = "e:\docker\data"
+
+    docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -v <host directory>/data:/var/opt/mssql/data -v <host directory>/log:/var/opt/mssql/log -v <host directory>/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2019-latest
+
+*** Data volume containers ***
+
+    docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -v sqlvolume:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2019-latest
+
+    **** Commands ****
+
+    docker volume ls (list volumes)
+    docker volume rm (remove volume)
+
+    Actual file location for volumes: \\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes
+
