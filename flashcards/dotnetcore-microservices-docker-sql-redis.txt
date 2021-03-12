@@ -74,3 +74,6 @@ Redis and Sql Server on Linux all running in docker containers.
 *** REFERENCES ***
 
 https://fullstackmark.com/post/12/get-started-building-microservices-with-asp.net-core-and-docker-in-visual-studio-code
+
+https://github.com/mmacneil/ASPNETCoreDockerMicroservices
+
