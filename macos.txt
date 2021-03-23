@@ -30,6 +30,7 @@
     Screen (real-time collaboration / screen sharing / remote control)
     Flux (controls screen intensity)
     Magnet (snap tool for apps)
+    qView (image viewer)
 
 
 

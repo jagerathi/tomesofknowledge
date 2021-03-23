@@ -70,4 +70,6 @@
 	$cred = Get-Credential -Credential abc\adm-kknoll
 	New-PSDrive -Name "Z" -Root "\\172.20.3.7\storage" -Persist -PSProvider -Credential $cred 
 
-	
+*** Find and Replace Text ***	
+
+((Get-Content -Path c:\acr_import\DeltekVisionWebServiceInterface.exe.config) -replace 'ABCprint2!', 'ABCprint3!' ) | Set-Content -Path c:\acr_import\DeltekVisionWebServiceInterface.exe.config
