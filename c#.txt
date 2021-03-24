@@ -26,3 +26,87 @@ calculateButton.Clicked += async (o, e) =>
 };
 
 This code cleanly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.
+
+*** Generics ***
+
+    public class GenericList<T> 
+    {
+
+    }
+
+    var list = new GenericList<int>();
+
+    T is resolved at compile time so there is not conversion penalty
+
+    Built ins: System.Collections.Generic 
+
+    **** Constraints ****
+
+    public T Max<T>(T a, T b) where T : IComparable
+    {
+        return a.CompareTo(b) > 0 ? a : b;
+    }
+
+    where T : IComparable (interface)
+    where T : Product (type or sub-types)
+    where T : struct (value type)
+    where T : class (reference type)
+    where T : new() (require a default constructor)
+
+    // T must implement the IComparable interface and must have a default constructor 
+    public class Foo<T> where T : IComparable, new()
+    {
+
+    }
+
+*** Delegate ***
+
+    * An object that knows how to call a method (or group of methods)
+    * A reference to a function 
+    * For designing extensible and flexible applications (frameworks)
+
+    public delegate void FilterHandler(Photo photo); (void name(Params) is the signatur that must be supported)
+
+    Generic Delegates in .net 
+
+    Action 
+
+        System.Action<in1, in2, in3>
+
+    Func 
+
+        System.Func<in1, in2, out>
+
+    Interfaces or Delegates?
+
+        Use Delegate when:
+            An eventing design pattern is used 
+            The called doesn't need to access other properties or methods on the object implementing the method 
+
+
+*** LAMBDA ***
+
+    An anonymous method 
+        * No access modifier 
+        * No name 
+        * No return statement 
+
+    We use them for convenience 
+
+    operator is => 
+
+    number => number * number;
+
+    Func<int,int> square = number => number * number;
+
+    Console.WriteLine(square(5));
+
+    () =>       (no parameters)
+    x =>        (single parameter)
+    (x,y,z) =>  (multiple parameters)
+
+    
+
+
+
+

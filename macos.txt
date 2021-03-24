@@ -9,6 +9,7 @@
     CMD + SPACE - Spotlight (Search)
     CMD + Tab - App Switcher 
     CMD + SHIFT + 3 - Capture whole screen 
+    CMD + SHIFT + 4 - Capture cursor 
     CMD + SPACE (hold) - Siri 
     
 
@@ -37,4 +38,4 @@
 *** REFERENCES ***
 
     https://www.muo.com/tag/macos-beginners-guide/
-    
+    https://www.macrumors.com/guide/useful-mac-tips/
