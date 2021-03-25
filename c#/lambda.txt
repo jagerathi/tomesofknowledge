@@ -1,0 +1,20 @@
+=== LAMBDA ===
+
+    An anonymous method 
+        * No access modifier 
+        * No name 
+        * No return statement 
+
+    We use them for convenience 
+
+    operator is => 
+
+    number => number * number;
+
+    Func<int,int> square = number => number * number;
+
+    Console.WriteLine(square(5));
+
+    () =>       (no parameters)
+    x =>        (single parameter)
+    (x,y,z) =>  (multiple parameters)

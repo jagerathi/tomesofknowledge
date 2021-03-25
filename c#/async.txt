@@ -1,0 +1,28 @@
+=== ASYNC ===
+
+*** Asynchronous ***
+
+C# has a language-level asynchronous programming model, which allows for easily writing asynchronous code, without having to juggle callbacks or conform to a library that supports asynchrony. It follows what is known as the Task-based Asynchronous Pattern (TAP).
+
+** I/O BOUND **
+downloadButton.Clicked += async (o, e) =>
+{
+    // This line will yield control to the UI as the request
+    // from the web service is happening.
+    //
+    // The UI thread is now free to perform other work.
+    var stringData = await _httpClient.GetStringAsync(URL);
+    DoSomethingWithData(stringData);
+};
+The code expresses the intent (downloading data asynchronously) without getting bogged down in interacting with Task objects.
+
+** CPU BOUND **
+calculateButton.Clicked += async (o, e) =>
+{
+    // This line will yield control to the UI while CalculateDamageDone()
+    // performs its work. The UI thread is free to perform other work.
+    var damageResult = await Task.Run(() => CalculateDamageDone());
+    DisplayDamage(damageResult);
+};
+
+This code cleanly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.

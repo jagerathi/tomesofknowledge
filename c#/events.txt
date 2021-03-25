@@ -1,0 +1,83 @@
+=== EVENTS ===
+
+    * A mechanism for communications between objects 
+    * Used in building loosely coupled applications 
+    * Helps extending applications 
+
+    Event Handler: public void OnEvent(object source, EventArgs e) // signature of the event handler 
+
+    Delegate defines the contract between the publisher and subscriber 
+
+    Steps:
+        1. Define the event args (default is EventArgs)
+        2. Define an event based on the event args needed
+        3. Raise the event 
+
+    Example:
+
+    public class VideoEventArgs : EventArgs
+    {
+        public Video Video {get;set;}
+    }
+
+    public class VideoEncoder 
+    {
+        public event EventHandler<VideoEventArgs> VideoEncoded;
+
+        public void Encode(Video video)
+        {
+            // do DoSomethingWithData
+
+            // publish 
+            OnVideoEncoded(video);
+        }
+
+        protected virtual void OnVideoEncoded(Video video)
+        {
+            // publish to any registered subscribers 
+            if(VideoEncoded != null) 
+                VideoEncoded(this, new VideoEventArgs { Video = video });
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var video = new Video { Title = "Video 1"};
+            var videoEncoder = new VideoEncoder(); // publisher 
+            var mailService = new MailService(); // subscriber 
+            var textService = new TextMessageService(); // subscriber 
+
+            // subscriber is being added to the publisher list 
+            videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += textService.OnVideoEncoded;
+
+            videoEncoder.Encode(video);
+        }
+    }
+
+    public class MailService 
+    {
+        // subscriber function - uses the delegate signature 
+        public void OnVideoEncoded(object source, VideoEventArgs e)
+        {
+
+        }
+    }
+
+    public class TextMessageService 
+    {
+        public void OnVideoEncoded(object source, VideoEventArgs args)
+        {
+
+        }
+    }
+
+    *** Built ins ***
+
+    public event EventHandler VideoEncoded; // encapsulates the delegate and event. uses standard event args.
+    public event EventHandler<VideoEventArgs> VideoEncoded; // sames as above except allows custom event args to be used 
+
+
+

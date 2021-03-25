@@ -1,0 +1,31 @@
+=== Generics ===
+
+    public class GenericList<T> 
+    {
+
+    }
+
+    var list = new GenericList<int>();
+
+    T is resolved at compile time so there is not conversion penalty
+
+    Built ins: System.Collections.Generic 
+
+    **** Constraints ****
+
+    public T Max<T>(T a, T b) where T : IComparable
+    {
+        return a.CompareTo(b) > 0 ? a : b;
+    }
+
+    where T : IComparable (interface)
+    where T : Product (type or sub-types)
+    where T : struct (value type)
+    where T : class (reference type)
+    where T : new() (require a default constructor)
+
+    // T must implement the IComparable interface and must have a default constructor 
+    public class Foo<T> where T : IComparable, new()
+    {
+
+    }
