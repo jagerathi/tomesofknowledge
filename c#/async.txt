@@ -26,3 +26,51 @@ calculateButton.Clicked += async (o, e) =>
 };
 
 This code cleanly expresses the intent of the button's click event, it doesn't require managing a background thread manually, and it does so in a non-blocking way.
+
+
+Asynchronous process improves how applications react 
+
+
+Example
+
+    public class Program 
+    {
+        public MainWindow()
+        {
+            InitializeComponents();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DownloadHtml("http://msdn.microsoft.com");
+        }
+
+        public async Task DownloadHtmlAsync(string url)
+        {
+            var webClient = new webClient();
+            var html = await webClient.DownloadStringTaskAsync(url);
+
+            using(var writer = new StreamWriter("c:\temp\result.html"))
+            {
+                await writer.WriteAsync(html);
+            }
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            var getHtmlTask = GetHtmlAsync("http://msdn.microsoft.com");
+
+            // this happens immediately
+            MessageBox.Show("Waiting for the task to completed.");
+
+            var html = await getHtmlTask;
+            // this waits for the above line to complete 
+            MessageBox.Show(html.Substring(0,100));
+        }
+
+        private async Task<string> GetHtmlAsync(string url)
+        {
+            var webClient = new WebClient();
+            return await webClient.DownloadStringTaskAsync(url);
+        }
+    }
