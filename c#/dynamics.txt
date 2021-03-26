@@ -1,0 +1,34 @@
+=== DYNAMICS ===
+
+Programming languages 
+    * Statically-typed languages: C#, Java 
+        * Type resolution at compile-time 
+        * early feedback (compile time)
+    * Dynamically-typed languages: Ruby, Javascript, Python
+        * Type resolution done at runtime 
+        * faster coding 
+
+Replaces needing to use reflection in C# 
+
+DLR added that sits on top of the CLR
+
+Example:
+
+    class Program 
+    {
+        static void Main(string[] args)
+        {
+            // using reflection
+            object o = "MyName";
+
+            var methodInfo = o.GetType().GetMethod("MethodName");
+            methodInfo.Invoke(a,b);
+
+            // using dynamic object
+            dynamic o2 = "MyName";
+            o2.Optimize();
+        }
+    }
+
+
+
