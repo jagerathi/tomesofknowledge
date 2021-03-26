@@ -1,0 +1,34 @@
+=== Extension Methods ===
+
+Extends an existing class
+
+Static class, and static methods, but are callable on an instance 
+
+Example 
+
+    class Program
+    {
+        static void Main(string[] args) 
+        {
+            var text = "Sample text here...";
+
+            var shortText = text.Shorten(5);
+        }
+    }
+
+    public static class StringExtensions
+    {
+        public static string Shorten(this String source, int numberOfWords)
+        {
+            if(numberOfWords < 0) throw new ArgumentOutOfRangeException();
+
+            if(numberOfWords <= 0) return "";
+
+            var words = source.Split(' ');
+
+            if(words.Length <= numberOfWords) return source;
+
+            return string.Join( " ", words.Take(numberOfWords));
+
+        }
+    }

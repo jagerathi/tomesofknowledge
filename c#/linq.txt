@@ -1,0 +1,62 @@
+=== LINQ ===
+
+Stands for: (L)anguarge (In)tegrated (Q)uery 
+Gives you the capability to query objects 
+
+You can query:
+    Object in memory, eg. collections (LINQ to objects)
+    Databases (LINQ to entities)
+    XML (LINQ to XML)
+    ADO.NET Data Sets (LINQ to Data Sets)
+
+Example
+    
+    class Program
+    {
+        static void Main(string[] args) 
+        {
+
+            var books = new BookRepository().GetBooks();
+
+            // LINQ Query Operator
+
+            var cheaperBooks = 
+                    from b in books 
+                    where b.Price < 10
+                    order by b.Title
+                    select b.Title 
+            
+            // LINQ Extension methods 
+
+            var cheaperBooks2 = books
+                    .Where(x => x.Price < 10)
+                    .OrderBy(x => x.Title)
+                    .Select(x => x.Title);
+
+            // end result is the same 
+            cheaperBooks = cheaperBooks2;
+        }
+    }
+
+LINQ Extensions 
+
+    Average 
+    Count 
+    First 
+    FirstOrDefault
+    Last 
+    LastOrDefault 
+    Max 
+    Min 
+    OrderBy 
+    OrderByDesc
+    Select  
+    Single
+    SingleOrDefault  
+    Skip
+    Sum
+    Take 
+    Where
+
+
+    
