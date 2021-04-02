@@ -2,7 +2,7 @@
 
 ng new <project name>
 
-ng server --open (start angular server and open in browser)
+ng serve --open (start angular server and open in browser)
 
 ng generate component <name>
 
