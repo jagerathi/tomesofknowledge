@@ -41,6 +41,8 @@ Spring (spring.io)
 Spring.net (springframework.net)
 RabbitMQ
 gRPC
+OAuth 
+
 
 *** Concepts ***
 
@@ -49,6 +51,8 @@ Templates (C++)
 Multi-Threading
 Cloud-Native application development 
 Blockchain
+ChatBot
+MFA
 
 *** Tools ***
 
