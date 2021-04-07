@@ -4,3 +4,27 @@
 
 	* POSTMAN (Windows App or Chrome App)
 	* F12 in Browser (built-in debug tools)
+
+
+*** EDITORS ***
+
+	* ATOM (atom.io)
+	* codepen.io (online editor)
+
+
+*** RESOURCES ***
+
+	* https://developer.mozilla.org 
+	* https://devdocs.io
+	* https://www.w3schools.com/
+	* https://web.archive.org
+	* https://docs.emmet.io 
+	* https://joelonsoftware.com (charsets)
+
+
+
+
+
+
+
+

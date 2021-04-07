@@ -1,0 +1,22 @@
+=== EVE Commands ===
+
+Bind your radial menu to RIGHT-CLICK and remember it is contextual so lots of options 
+
+"L" key displays book marks for current system 
+
+Message and Logs -> Options to control content of "in space" messages 
+
+*** Solar System Map ***
+
+    * Solar Map ()
+    * double-click to swswitch between side view and top view 
+    * double-click on signature to center it 
+
+
+
+*** Probing ***
+
+    * Probe Scanner             ALT + P
+    * Increase Probe Range      .
+    * Decrease Probe Range      ,
+    * Refresh Analyze           ?
