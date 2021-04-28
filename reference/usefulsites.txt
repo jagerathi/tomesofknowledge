@@ -1,0 +1,24 @@
+=== USEFUL SITES ===
+
+*** CODING ***
+
+    * https://repl.it 
+    * https://regex101.com
+
+
+
+*** ALGOITHMS ***
+
+    * https://algoexport.io 
+    * https://hackerrank.com 
+    * https://geeksforgeeks.com
+
+
+
+*** DATA STRUCTURES ***
+
+    * https://visualgo.net - so how different data structures work visually 
+    * neo4j - a database for modeling graphs 
+
+    
+
