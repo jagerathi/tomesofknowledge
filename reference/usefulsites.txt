@@ -4,6 +4,8 @@
 
     * https://repl.it 
     * https://regex101.com
+    * https://glot.io
+    
 
 
 
@@ -20,5 +22,5 @@
     * https://visualgo.net - so how different data structures work visually 
     * neo4j - a database for modeling graphs 
 
-    
+
 
