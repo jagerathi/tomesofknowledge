@@ -6,11 +6,13 @@
     Advantages:
     Dis-Advantages:
 
-MongoDB (mongodb.com)
-    Description: MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
-    Use Cases: dynamic schema, document based data 
-    Advantages: CRUD is atomic by default. 
-    Dis-Advantages: 16-MB document size limit. Large documents mean more overhead and will impact performance. 
+DATA LAKE (https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/)
+    Description: A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. 
+                 You can store your data as-is, without having to first structure the data, and run different types of analytics—from dashboards 
+                 and visualizations to big data processing, real-time analytics, and machine learning to guide better decisions.
+    Use Cases:
+    Advantages: Schema on read. Low cost storage. Raw data. 
+    Dis-Advantages:
 
 ElasticSearch (elastic.co)
     Description: Elasticsearch is a distributed, open source search and analytics engine for all types of data, including textual, 
@@ -23,6 +25,14 @@ ElasticSearch (elastic.co)
     Advantages:
     Dis-Advantages:
 
+Kibana
+    Description: Kibana is a data visualization and management tool for Elasticsearch that provides real-time histograms, line graphs, pie charts, and maps. 
+                 Kibana also includes advanced applications such as Canvas, which allows users to create custom dynamic infographics based on their data, 
+                 and Elastic Maps for visualizing geospatial data.
+    Use Cases: 
+    Advantages:
+    Dis-Advantages:
+
 Logstash
     Description: Logstash, one of the core products of the Elastic Stack, is used to aggregate and process data and send it to Elasticsearch. 
                  Logstash is an open source, server-side data processing pipeline that enables you to ingest data from multiple sources simultaneously 
@@ -31,13 +41,11 @@ Logstash
     Advantages:
     Dis-Advantages:
 
-Kibana
-    Description: Kibana is a data visualization and management tool for Elasticsearch that provides real-time histograms, line graphs, pie charts, and maps. 
-                 Kibana also includes advanced applications such as Canvas, which allows users to create custom dynamic infographics based on their data, 
-                 and Elastic Maps for visualizing geospatial data.
-    Use Cases: 
-    Advantages:
-    Dis-Advantages:
+MongoDB (mongodb.com)
+    Description: MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.
+    Use Cases: dynamic schema, document based data 
+    Advantages: CRUD is atomic by default. 
+    Dis-Advantages: 16-MB document size limit. Large documents mean more overhead and will impact performance. 
 
 REDIS (redis.io)
     Description: Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. 
@@ -49,10 +57,3 @@ REDIS (redis.io)
     Advantages:
     Dis-Advantages:
 
-DATA LAKE (https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/)
-    Description: A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. 
-                 You can store your data as-is, without having to first structure the data, and run different types of analytics—from dashboards 
-                 and visualizations to big data processing, real-time analytics, and machine learning to guide better decisions.
-    Use Cases:
-    Advantages: Schema on read. Low cost storage. Raw data. 
-    Dis-Advantages:
