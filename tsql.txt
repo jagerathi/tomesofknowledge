@@ -13,3 +13,13 @@
 	SET @decoded = CONVERT( VARCHAR(500), CONVERT(XML, @Encoded).value('.', 'varbinary(max)'))
 
 	SELECT @encoded, @decoded 
+
+*** WITH statement ***
+
+	;with <resultName> as 
+	(
+		select statement here
+	),
+
+	select * from <resultName> 
+

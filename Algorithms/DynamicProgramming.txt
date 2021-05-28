@@ -1,0 +1,84 @@
+=== Dynamic Programming ===
+
+*** Longest Increasing Subsequence (LIS) ***
+
+LIS( [ 3, 1, 8, 2, 5 ]) => 1, 2, 5 (len = 3)
+
+LIS( [5, 2, 8, 6, 3, 6, 9, 5]) => 2, 3, 6, 9 (len = 4)
+
+1. Visualize examples 
+
+    Directed acyclic graph
+
+        Node graph - edges represent nodes that match our constraints 
+
+2. Find sub-problems
+
+3. Find relationship among sub-problems 
+
+4. Generalize the relationship
+
+5. Implement by solving subproblems in order 
+
+LIS[n] = 1 + max { LIS[k] | k < n, A[k] < A[n] }
+
+def lis(A):
+    L = [1] * len(A)
+    for i in range(1, LEN(L)):
+        subproblems = [L[k] for k in range(i) if A[k] < A[i]]
+        L[i] = 1 + max(subproblems, default = 0)
+    return max(L, default=0)
+
+*** Box Stacking ***
+
+Given n boxes [(L1, W1, H1), (L2,W2,H2), ..., (Ln, Wn, Hn)] where box i has lengh Li, width Wi, and height Hi,
+find the tallest possible stack.
+Box (Li, Wi, Hi) can be on top of box (Lj, Wj, Hj) if Li < Lj, Wi < Wj.
+
+[(2,3,3), (2,2,4), (4,4,2)]
+
+(2,2,4)
+(4,4,2) = Height of 6
+
+1. Visual examples 
+
+    what can we stack on which?
+
+    Use the directed acyclic graph 
+
+2. Find the appropriate subproblem 
+
+    a. we find the highest possible stack for each box at the bottom
+    b. we find which boxes we can stock on which 
+
+3. Find the relationship between subproblems
+4. general relationships
+5. Implement by solving subproblems in order 
+
+    def tallestStack(boxes):
+        boxes.sort(key=lambda x: x[0])
+        heights = { box: box{2} for box in boxes}
+        for i in range(1, len(boxes))
+            box = boxes[i]
+            S = [boxes[j] for j in range(i) if canBeStacked(boxes[j], box)]
+            heights[box] = box[2] + max([heights[box] for box in S], default=0)
+        return max(heights.values(), default=0)
+    
+    def canBeStacked(top, bottom):
+        return top[0] < bottom[0] and top[1] < bottom[1]
+
+
+
+*** Key Concepts ***
+
+    DP = recursion + memoization 
+
+    - memoize (remember) & re-use solutions to subproblems that help solve the problem
+    - time = no of subproblems * time / subproblem 
+    * don't count memoized recursions as they are O(1) and considered free 
+
+    Guessing: don't know the answer? guess. try all guesses & take the best. 
+
+    
+
+

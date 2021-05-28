@@ -23,6 +23,8 @@ docker logs <instance name>
 docker run -d -p 3000:80 tutum/hello-world (-d = detached, -p is port forarding, tutum/hello-world is the image name)
 docker run --name=<container name> --restart on-failure -d <imagename:tag>
 
+docker restart <container name> --time n [ restart container --time will cause a delay in seconds ]
+
 *** Getting the enviromental variables for a container ***
 
 docker inspect <container name>
