@@ -115,6 +115,7 @@ MSSQL
 *** Other ***
 
 Security clearance 
+DevSecOps
 
 *** Stacks ***
 
