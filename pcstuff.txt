@@ -1,0 +1,16 @@
+=== PC STUFF ===
+
+*** Free Software you need ***
+
+    1. TechPowerUp GPU-Z
+    2. CPUID HWMonitor
+    3. Heaven DX11 Benchmark 
+    4. MSI Afterburner 
+    5. OBS Studio 
+    6. WinDirStat
+    7. HWInfo
+    8. CPUID CPU-Z
+    9. Voidtools Everything 
+    10. Sysinternals Suite 
+
+
