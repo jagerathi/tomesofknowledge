@@ -27,6 +27,10 @@
 	
 	** to pass arguments to console app, dotnet run -- -arg1=yes -arg2=no // the key is the "--" after run 
 	
+*** Extensions ***
+
+	* advanced-new-file 
+	* File Utils
 	
 
 	
