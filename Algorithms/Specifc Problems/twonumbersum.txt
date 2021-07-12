@@ -1,0 +1,38 @@
+=== Two Number Sum ===
+
+Write a function that takes in a non-empty array of distinct integers and a target sum.
+
+If any two numbers in teh input arry sum up to the target sum, the fuciotn should return them in an array.
+
+If no two numbers sum up the target, return an empty array 
+
+*** Optimal Space & Time Complexity ***
+
+Time: O(n)
+Space: O(n)
+
+*** Test Sets ***
+
+array = [ 3, 5, -4, 8, 11, -1, 6]
+targetSum = 10
+
+output = [ 11, -1 ]
+
+*** Code ***
+
+vector<int> twoNumberSum(vector<int> array, int targetSum) {
+
+    unordered_set<int> values;
+
+    for(int num: array) {
+        int match = targetSum - num;
+        if(values.find(match) != values.end()) {
+            return vector<int> { match, num };
+        }
+
+        values.insert(num);
+    }
+
+    return {};
+
+}

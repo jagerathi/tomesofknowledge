@@ -1,0 +1,23 @@
+=== Things to Know ===
+
+* Logarithms (and how they compare with linear)
+* Graph traversal 
+    * DFS
+    * BFS
+    * Cyclic
+* Binary Search Algorithm
+* Sliding window technique 
+* Recursion 
+* Inverting a Binary tree
+* Reversing a linked list 
+* Suffix Trees 
+* Heaps 
+    * Min 
+    * Max
+* Dynamic Programming 
+    * Solving complex problems by solving sub problems
+* Sorting algorithms
+    * quick sort 
+    * merge sort
+
+
