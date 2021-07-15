@@ -1,0 +1,12 @@
+=== Git Basics ===
+
+Git is a free, open source version control system 
+
+*** Commands ***
+
+    * clone -> Brings a repository local from the a hosted site 
+    * add -> track your files and changes in git 
+    * commit -> saves your files to git 
+    * push -> upload to remote repo 
+    * pull -> download changes from remote repo to your local machine 
+

@@ -12,6 +12,14 @@ sudo passwd <username>
 
 df -h // check available space on volumes
 
+which 
+whoami 
+adduser 
+rm
+cp 
+
+
+
 
 *** FOR WINDOWS ***
 

@@ -1,0 +1,37 @@
+=== Database ===
+
+*** Relational ***
+
+    * SQL Server 
+    * Oracle 
+    * mySQL
+    * PostgresSQL
+
+*** NoSQL ***
+
+    * Cassandra 
+    * MongoDB 
+
+*** Columnar (big data) ***
+
+    * Google BigQuery 
+    * Cassandra
+    * MariaDB
+    * HBase 
+
+*** Object Database ***
+
+    * Wakanda 
+    * ObjectStore 
+
+*** Key-Value ***
+
+    * Amazon DynamoDB
+    * Redis 
+
+*** Document Database ***
+
+    * MongoDB 
+    * Amazon DocumentDB 
+    * Apache CouchDB
+
